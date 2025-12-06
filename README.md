@@ -1,16 +1,61 @@
-## Hi there 👋
+# Olá! Sou o Gyliardson (ou apenas Gyli, para facilitar)
 
-<!--
-**Gyliardson/gyliardson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
+  <h3>Estudante de Ciência da Computação | Foco em IA Generativa & Desenvolvimento</h3>
+  <p>De Infraestrutura para Engenharia de Software: Transformando problemas lógicos em soluções com Python e IA.</p>
+</div>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Sobre Mim
+
+Sou estudante de Ciência da Computação (Previsão: 2027) com um perfil **autodidata e mais "mão na massa"**. Minha trajetória começou em **Infraestrutura e Suporte**, onde desenvolvi uma base sólida em hardware, redes e Linux.
+
+Atualmente, migrei meu foco 100% para **Desenvolvimento e Inteligência Artificial**. Tenho experiência prática recente com Engenharia de Prompt e estou me aprofundando em arquiteturas de LLMs locais.
+
+- Trabalhando no desenvolvimento de pipelines de **IA Local (Ollama/Pytorch)**.
+- Estudando **Fine-tuning de modelos** e otimização de hardware.
+- **Soft Skills:** Resolução de problemas, aprendizado rápido e adaptação.
+
+---
+
+### Tech Stack & Ferramentas
+
+**Inteligência Artificial & Backend** <br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-black?style=for-the-badge&logo=ollama&logoColor=white)
+
+**Web & Infraestrutura** <br>
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+---
+
+### Meus Projetos
+
+Aqui concentro meus estudos práticos, desde a ideia até a implementação.
+
+| Projeto | Descrição & Tecnologias | Status |
+| :--- | :--- | :--- |
+| **Interface LLM Local** | **Interface de Chat & Controle de Parâmetros**<br>Sistema full-stack (Python + Web) para uso privado de LLMs.<br>O vídeo demonstra: **Login multi-perfil**, **Chat em tempo real** e **Ajuste de hiperparâmetros** (Top-k, Temperatura).<br>[![YouTube](https://img.shields.io/badge/Ver_Demo_no_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/cPk7GGeQorM)<br>![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python) ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) | **Prova de Conceito** |
+
+<!-- | **Fine-tuning SLM** | **Ajuste Fino de Modelos Pequenos**<br>Experimento de fine-tuning em "Small Language Models" para rodar em hardware doméstico.<br>![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python) ![HuggingFace](https://img.shields.io/badge/-HuggingFace-333?style=flat&logo=huggingface) | **Planejado** |
+| **Web Dev Showcase** | **Portfólio Front-end**<br>Coleção de páginas e componentes para demonstrar domínio em Web Standards.<br>![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5) ![CSS3](https://img.shields.io/badge/-CSS3-333?style=flat&logo=css3) ![JS](https://img.shields.io/badge/-JS-333?style=flat&logo=javascript) | **Planejado** |-->
+
+---
+
+### 📫 Contato
+
+<div align="left">
+  <a href="https://linkedin.com/in/gyliardson-keitison" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
+  </a>
+  <a href="mailto:gyliardson@outlook.com">
+    <img src="https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
+  </a>
+</div>
