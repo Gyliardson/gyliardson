@@ -9,7 +9,7 @@
   <a href="https://gyliardson.github.io/gyliardson/">
     <img src="https://img.shields.io/badge/✨_Visite_meu_Portfólio_Interativo-238636?style=for-the-badge&logo=github&logoColor=white" alt="Visite meu Portfólio">
   </a>
-  <a href="https://gyliardson.github.io/Gyliardson/Curriculo-Gyliardson-9011.pdf">
+  <a href="https://gyliardson.github.io/gyliardson/Curriculo-Gyliardson-9011.pdf">
     <img src="https://img.shields.io/badge/📄_Ver_Currículo_PDF-b31b1b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Baixar Currículo">
   </a>
 
