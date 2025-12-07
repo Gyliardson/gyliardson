@@ -6,7 +6,7 @@
 
   <br>
 
-  <a href="https://gyliardson.github.io/Gyliardson/">
+  <a href="https://gyliardson.github.io/gyliardson/">
     <img src="https://img.shields.io/badge/✨_Visite_meu_Portfólio_Interativo-238636?style=for-the-badge&logo=github&logoColor=white" alt="Visite meu Portfólio">
   </a>
   <a href="https://gyliardson.github.io/Gyliardson/Curriculo-Gyliardson-9011.pdf">
@@ -61,7 +61,7 @@ Aqui concentro meus estudos práticos, desde a ideia até a implementação.
 ### 📫 Contato
 
 <div align="left">
-  <a href="https://gyliardson.github.io/Gyliardson/" target="_blank">
+  <a href="https://gyliardson.github.io/gyliardson/" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Meu_Site-238636?style=for-the-badge&logo=github&logoColor=white" target="_blank">
   </a>
   <a href="https://linkedin.com/in/gyliardson-keitison" target="_blank">
