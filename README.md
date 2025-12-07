@@ -3,6 +3,16 @@
 <div align="center">
   <h3>Estudante de Ciência da Computação | Foco em IA Generativa & Desenvolvimento</h3>
   <p>De Infraestrutura para Engenharia de Software: Transformando problemas lógicos em soluções com Python e IA.</p>
+
+  <br>
+
+  <a href="https://gyliardson.github.io/Gyliardson/">
+    <img src="https://img.shields.io/badge/✨_Visite_meu_Portfólio_Interativo-238636?style=for-the-badge&logo=github&logoColor=white" alt="Visite meu Portfólio">
+  </a>
+  <a href="https://gyliardson.github.io/Gyliardson/Curriculo-Gyliardson-9011.pdf">
+    <img src="https://img.shields.io/badge/📄_Ver_Currículo_PDF-b31b1b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Baixar Currículo">
+  </a>
+
 </div>
 
 ---
@@ -46,14 +56,14 @@ Aqui concentro meus estudos práticos, desde a ideia até a implementação.
 | [**Local RAG Assistant**](https://github.com/Gyliardson/local-rag-assistant) | **Chat Privado com Documentos (PDF)**<br>Assistente inteligente que roda 100% local para análise de dados sensíveis.<br>O vídeo demonstra: **Ingestão de arquivos**, **Processamento Vetorial** e **Respostas com citação de fontes**.<br>[![YouTube](https://img.shields.io/badge/Ver_Demo_no_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Lltl1Js1pmM) [![GitHub](https://img.shields.io/badge/Ver_Código-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gyliardson/local-rag-assistant)<br>![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python) ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white) ![LangChain](https://img.shields.io/badge/-LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) | **Completo v1.0** |
 | **Interface LLM Local** | **Interface de Chat & Controle de Parâmetros**<br>Sistema full-stack (Python + Web) para uso privado de LLMs.<br>O vídeo demonstra: **Login multi-perfil**, **Chat em tempo real** e **Ajuste de hiperparâmetros** (Top-k, Temperatura).<br>[![YouTube](https://img.shields.io/badge/Ver_Demo_no_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/cPk7GGeQorM)<br>![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python) ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) | **Prova de Conceito** |
 
-<!-- | **Fine-tuning SLM** | **Ajuste Fino de Modelos Pequenos**<br>Experimento de fine-tuning em "Small Language Models" para rodar em hardware doméstico.<br>![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python) ![HuggingFace](https://img.shields.io/badge/-HuggingFace-333?style=flat&logo=huggingface) | **Planejado** |
-| **Web Dev Showcase** | **Portfólio Front-end**<br>Coleção de páginas e componentes para demonstrar domínio em Web Standards.<br>![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5) ![CSS3](https://img.shields.io/badge/-CSS3-333?style=flat&logo=css3) ![JS](https://img.shields.io/badge/-JS-333?style=flat&logo=javascript) | **Planejado** |-->
-
 ---
 
 ### 📫 Contato
 
 <div align="left">
+  <a href="https://gyliardson.github.io/Gyliardson/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Meu_Site-238636?style=for-the-badge&logo=github&logoColor=white" target="_blank">
+  </a>
   <a href="https://linkedin.com/in/gyliardson-keitison" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
   </a>
