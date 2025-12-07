@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyliardson Keitison | Dev & IA</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gh: {
+                            bg: '#0d1117',
+                            card: '#161b22',
+                            border: '#30363d',
+                            text: '#c9d1d9',
+                            muted: '#8b949e',
+                            link: '#58a6ff',
+                            btn: '#238636',
+                            btnHover: '#2ea043',
+                            header: '#010409'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; }
+        .terminal-cursor::after { content: '█'; animation: blink 1s step-start infinite; color: #58a6ff; }
+        @keyframes blink { 50% { opacity: 0; } }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #0d1117; }
+        ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #58a6ff; }
+    </style>
+</head>
+<body class="antialiased selection:bg-gh-link selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-gh-header/90 backdrop-blur-md border-b border-gh-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-brands fa-github text-3xl text-white"></i>
+                    <span class="font-bold text-xl tracking-tight text-white">Gyli<span class="text-gh-link">.dev</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-mono text-sm">
+                        <a href="#about" class="hover:text-white transition">~/sobre_mim</a>
+                        <a href="#projects" class="hover:text-white transition">~/meus_projetos</a>
+                        <a href="#hobbies" class="hover:text-white transition">~/off_topic</a>
+                    </div>
+                </div>
+                <a href="#contact" class="bg-gh-btn hover:bg-gh-btnHover text-white px-4 py-2 rounded-md text-sm font-bold transition border border-[rgba(255,255,255,0.1)]">
+                    Mandar oi :D
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gh-card border border-gh-border rounded-lg shadow-2xl overflow-hidden">
+                <div class="bg-gh-header px-4 py-2 border-b border-gh-border flex items-center space-x-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="ml-4 text-xs text-gh-muted font-mono">gyli@dev:~/portfolio</span>
+                </div>
+                <div class="p-6 font-mono text-sm sm:text-base space-y-4">
+                    <div class="flex">
+                        <span class="text-gh-link mr-2">➜</span>
+                        <span class="text-purple-400 mr-2">~</span>
+                        <span id="typewriter" class="terminal-cursor text-white"></span>
+                    </div>
+                    <div id="terminal-output" class="hidden text-gh-muted space-y-2">
+                        <p>> Compilando motivação... [OK]</p>
+                        <p>> Trocando playlist (SOAD tocando)... [OK]</p>
+                        <p>> Debugando café... [DONE]</p>
+                        <br>
+                        <h1 class="text-3xl sm:text-5xl font-bold text-white mb-2">Opa, sou o Gyliardson! :D</h1>
+                        <p class="text-xl text-gh-link">Mas pode me chamar de Gyli.</p>
+                        <p class="max-w-2xl text-gh-text mt-4">
+                            Tô migrando de Infraestrutura para <strong>Engenharia de Software e IA</strong>.
+                            Gosto de resolver problema chato e de fazer o código rodar (nem que seja na força do ódio e da documentação em chinês).
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 pt-6 items-start sm:items-center">
+
+                            <a href="./Curriculo-Gyliardson-9011.pdf" target="_blank" class="flex items-center bg-gh-border hover:bg-gh-link text-white px-4 py-2 rounded-md font-bold text-sm transition group">
+                                <i class="fa-solid fa-file-pdf mr-2 group-hover:animate-bounce"></i>
+                                Ver Currículo Formal
+                            </a>
+
+                            <div class="hidden sm:block h-6 w-px bg-gh-border mx-2"></div>
+
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/Gyliardson" target="_blank" class="text-2xl hover:text-white transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com/in/gyliardson-keitison" target="_blank" class="text-2xl hover:text-blue-500 transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://youtube.com/@gyliardsonkeitison3627" target="_blank" class="text-2xl hover:text-red-500 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="mailto:gyliardson@outlook.com" class="text-2xl hover:text-green-500 transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 border-t border-gh-border">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center font-mono">
+                <span class="text-gh-link mr-2">#</span> cat sobre_mim.txt
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="space-y-6 text-gh-text leading-relaxed">
+                    <div class="bg-gh-card p-6 rounded-lg border border-gh-border">
+                        <h3 class="text-white font-bold mb-2 flex items-center">
+                            <i class="fa-solid fa-server text-gh-muted mr-2"></i> Por que saí de Infra?
+                        </h3>
+                        <p class="text-sm">
+                            Comecei como dev, fui pra infra pra aprender e... bom, pra pagar as contas também, né? :3 <br><br>
+                            Aprendi muita coisa sobre Data Center, mas chegou uma hora que senti que tava estagnado. Parecia que nunca ia ter aquele momento "Nossa, descobri algo novo!". Era tudo muito igual. Aí decidi voltar pro código com força total.
+                        </p>
+                    </div>
+
+                    <div class="bg-gh-card p-6 rounded-lg border border-gh-border">
+                        <h3 class="text-white font-bold mb-2 flex items-center">
+                            <i class="fa-solid fa-shop text-gh-muted mr-2"></i> Experiência "Real Life"
+                        </h3>
+                        <p class="text-sm">
+                            Já gerenciei uma lanchonete da família. Sério. <br>
+                            Lidar com cliente faminto e pressão no horário de pico me ensinou mais sobre <strong>resiliência</strong> do que qualquer curso. Se o servidor cair, eu mantenho a calma (geralmente) -_-
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-gh-card p-6 rounded-lg border border-gh-border relative">
+                        <h3 class="text-white font-bold mb-2">🧠 Meu jeito de aprender</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-start"><span class="text-gh-link mr-2">></span> Vejo vídeo pra entender a lógica.</li>
+                            <li class="flex items-start"><span class="text-gh-link mr-2">></span> Saio fuçando no código até quebrar.</li>
+                            <li class="flex items-start"><span class="text-gh-link mr-2">></span> Conserto (e aprendo com o erro).</li>
+                            <li class="flex items-start"><span class="text-gh-link mr-2">></span> Se nada der certo: Documentação Oficial (mesmo que tenha que traduzir do chinês tudo bagunçado T-T).</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gh-card p-4 rounded-lg border border-gh-border flex items-center justify-between group hover:border-red-500/50 transition">
+                        <div>
+                            <span class="text-xs font-bold text-gh-muted uppercase">Opinião Impopular</span>
+                            <p class="text-white font-bold">Eu gosto de Java.</p>
+                            <p class="text-xs text-gh-muted">É, eu sei... me julguem.</p>
+                        </div>
+                        <div class="text-2xl font-mono">¯\_(ツ)_/¯</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gh-header border-y border-gh-border">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white mb-10 font-mono">./minha_stack.sh</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="flex items-center space-x-2 bg-gh-card px-4 py-2 rounded-full border border-gh-border hover:border-blue-500 transition select-none">
+                    <i class="fa-brands fa-python text-yellow-400 text-xl"></i>
+                    <span class="font-bold">Python</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-gh-card px-4 py-2 rounded-full border border-gh-border hover:border-red-500 transition select-none">
+                    <i class="fa-brands fa-java text-red-500 text-xl"></i>
+                    <span class="font-bold">Java <span class="text-xs font-normal opacity-50">(Sim!)</span></span>
+                </div>
+                <div class="flex items-center space-x-2 bg-gh-card px-4 py-2 rounded-full border border-gh-border hover:border-orange-500 transition select-none">
+                    <i class="fa-solid fa-microchip text-orange-500 text-xl"></i>
+                    <span class="font-bold">Pytorch</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-gh-card px-4 py-2 rounded-full border border-gh-border hover:border-white transition select-none">
+                    <i class="fa-solid fa-robot text-white text-xl"></i>
+                    <span class="font-bold">Ollama</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-gh-card px-4 py-2 rounded-full border border-gh-border hover:border-blue-400 transition select-none">
+                    <i class="fa-brands fa-docker text-blue-400 text-xl"></i>
+                    <span class="font-bold">Docker</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-gh-card px-4 py-2 rounded-full border border-gh-border hover:border-green-400 transition select-none">
+                    <i class="fa-solid fa-bolt text-green-400 text-xl"></i>
+                    <span class="font-bold">FastAPI</span>
+                </div>
+            </div>
+            <p class="mt-6 text-sm text-gh-muted">
+                Atualmente codando tudo no VS Code (Windows) com muita música no fone.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center font-mono">
+                <span class="text-gh-link mr-2">#</span> git log --oneline
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                
+                <div class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center text-gh-link">
+                            <i class="fa-solid fa-book-open mr-2"></i>
+                            <h3 class="font-bold text-lg group-hover:underline">Local RAG Assistant</h3>
+                        </div>
+                        <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded-full border border-green-700">Feito</span>
+                    </div>
+                    <p class="text-sm text-gh-text mb-4">
+                        Chat com PDFs rodando local. <br>
+                        <span class="text-gh-muted text-xs">A maior dor de cabeça aqui foi fazer as bibliotecas da Intel OneAPI conversarem entre si sem quebrar tudo T-T. Mas agora roda liso!</span>
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-mono text-gh-muted">
+                        <span>Python</span> <span>LangChain</span> <span>Streamlit</span> <span>ChromaDB</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/Gyliardson/local-rag-assistant" target="_blank" class="text-sm bg-gh-btn hover:bg-gh-btnHover text-white px-3 py-1.5 rounded-md border border-[rgba(255,255,255,0.1)] transition">
+                            <i class="fa-brands fa-github mr-1"></i> Code
+                        </a>
+                        <a href="https://youtube.com/@gyliardsonkeitison3627" target="_blank" class="text-sm bg-gh-card hover:bg-gh-border text-gh-text px-3 py-1.5 rounded-md border border-gh-border transition">
+                            <i class="fa-brands fa-youtube mr-1 text-red-500"></i> Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center text-gh-link">
+                            <i class="fa-solid fa-server mr-2"></i>
+                            <h3 class="font-bold text-lg group-hover:underline">Smart Feedback API</h3>
+                        </div>
+                        <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded-full border border-green-700">Feito</span>
+                    </div>
+                    <p class="text-sm text-gh-text mb-4">
+                        API que analisa tickets de suporte usando IA (Sentimento, Prioridade). <br>
+                        <span class="text-gh-muted text-xs">Aqui usei minha experiência de suporte pra criar algo que eu realmente usaria no dia a dia. >:)</span>
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-mono text-gh-muted">
+                        <span>FastAPI</span> <span>Docker</span> <span>Ollama API</span> <span>Pydantic</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/Gyliardson/smart-feedback-api" target="_blank" class="text-sm bg-gh-btn hover:bg-gh-btnHover text-white px-3 py-1.5 rounded-md border border-[rgba(255,255,255,0.1)] transition">
+                            <i class="fa-brands fa-github mr-1"></i> Code
+                        </a>
+                        <a href="https://youtube.com/@gyliardsonkeitison3627" target="_blank" class="text-sm bg-gh-card hover:bg-gh-border text-gh-text px-3 py-1.5 rounded-md border border-gh-border transition">
+                            <i class="fa-brands fa-youtube mr-1 text-red-500"></i> Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gh-card rounded-lg border border-gh-border p-6 opacity-75 hover:opacity-100 transition">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center text-purple-400">
+                            <i class="fa-solid fa-wand-magic-sparkles mr-2"></i>
+                            <h3 class="font-bold text-lg">Tiny-SQL Specialist</h3>
+                        </div>
+                        <span class="text-xs bg-yellow-900 text-yellow-300 px-2 py-1 rounded-full border border-yellow-700">Fazendo...</span>
+                    </div>
+                    <p class="text-sm text-gh-text mb-4">
+                        Tô treinando um modelo pequeno (tipo TinyLlama) pra transformar perguntas em português direto em SQL.
+                    </p>
+                    <div class="text-xs text-gh-muted italic">Em breve...</div>
+                </div>
+
+                <div class="bg-gh-card rounded-lg border border-gh-border p-6 opacity-75 hover:opacity-100 transition">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center text-purple-400">
+                            <i class="fa-solid fa-comments mr-2"></i>
+                            <h3 class="font-bold text-lg">Data-Chat Interface</h3>
+                        </div>
+                        <span class="text-xs bg-yellow-900 text-yellow-300 px-2 py-1 rounded-full border border-yellow-700">Planejado</span>
+                    </div>
+                    <p class="text-sm text-gh-text mb-4">
+                        A ideia é subir um CSV e conversar com ele usando o modelo do projeto anterior. Sem SQL na mão.
+                    </p>
+                    <div class="text-xs text-gh-muted italic">Em breve...</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="py-16 bg-gh-header border-t border-gh-border">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center font-mono">
+                <span class="text-gh-link mr-2">#</span> whoami --verbose
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gh-card p-6 rounded-lg border border-gh-border">
+                    <h3 class="text-white font-bold mb-4 flex items-center">
+                        <i class="fa-solid fa-gamepad text-purple-500 mr-2"></i> Estratégia & Reset
+                    </h3>
+                    <p class="text-sm mb-4">
+                        Gosto de jogos de pensar: Xadrez, Poker e LoL (infelizmente kkk). <br>
+                        Quando tô desmotivado ou travado num bug, abro o <strong>Minecraft</strong> pra construir alguma coisa e resetar a mente. Funciona sempre.
+                    </p>
+                </div>
+
+                <div class="bg-gh-card p-6 rounded-lg border border-gh-border relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-10">
+                        <i class="fa-solid fa-music text-8xl"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 flex items-center">
+                        <i class="fa-solid fa-headphones text-green-500 mr-2"></i> Coding Vibe
+                    </h3>
+                    <p class="text-xs text-gh-muted mb-3">O que me dá energia pra codar:</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center bg-gh-bg p-2 rounded border border-gh-border">
+                            <div class="w-8 h-8 bg-gray-700 rounded flex items-center justify-center mr-3 text-xs">🎵</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Unlasting (LiSA)</p>
+                                <p class="text-xs text-gh-muted">Ending de SAO (Reflexiva)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-gh-bg p-2 rounded border border-gh-border">
+                            <div class="w-8 h-8 bg-gray-700 rounded flex items-center justify-center mr-3 text-xs">🤘</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Toxicity (SOAD)</p>
+                                <p class="text-xs text-gh-muted">Energia pura</p>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gh-muted mt-2">
+                            Playlist aleatória: Pop internacional, Twenty One Pilots, Bruno Mars.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gh-card p-6 rounded-lg border border-gh-border md:col-span-2">
+                    <h3 class="text-white font-bold mb-2 flex items-center">
+                        <i class="fa-solid fa-lightbulb text-yellow-500 mr-2"></i> Fora da Bolha
+                    </h3>
+                    <p class="text-sm">
+                        Quando não tô no PC (o que é raro), gosto de ler Mangás/Manhwas ou estudar coisas aleatórias tipo Biologia e Medicina. <br>
+                        Sério, aprender coisas nada a ver com TI ajuda a pensar fora da caixa na hora de programar. :3
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-12 text-center border-t border-gh-border bg-gh-header">
+        <h2 class="text-2xl font-bold text-white mb-6">Bora codar algo junto?</h2>
+        <p class="text-gh-muted max-w-lg mx-auto mb-8">
+            Tô disponível para estágio (2 anos) e com muita vontade de aprender. <br>
+            Se curtiu meu perfil (ou só quer falar de Minecraft), manda um salve!
+        </p>
+        <a href="mailto:gyliardson@outlook.com" class="inline-block bg-gh-btn hover:bg-gh-btnHover text-white px-8 py-3 rounded-md font-bold text-lg transition border border-[rgba(255,255,255,0.1)]">
+            Mandar Email
+        </a>
+        
+        <div class="mt-12 text-xs text-gh-muted font-mono">
+            <p>Feito por mim (Gyli) hospedado no GitHub Pages.</p>
+            <p class="mt-2">System.exit(0); // Fui!</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const text = "whoami";
+            const typeWriterElement = document.getElementById('typewriter');
+            const outputElement = document.getElementById('terminal-output');
+            let i = 0;
+
+            function type() {
+                if (i < text.length) {
+                    typeWriterElement.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, 150); // Velocidade de digitação
+                } else {
+                    typeWriterElement.classList.remove('terminal-cursor');
+                    setTimeout(() => {
+                        outputElement.classList.remove('hidden');
+                    }, 300);
+                }
+            }
+
+            setTimeout(type, 800);
+        });
+    </script>
+</body>
+</html>
