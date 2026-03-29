@@ -1,74 +1,93 @@
-# Olá! Sou o Gyliardson (ou apenas Gyli, para facilitar)
+# Gyliardson Keitison | Software Engineering & AI
 
 <div align="center">
-  <h3>Estudante de Ciência da Computação | Foco em IA Generativa & Desenvolvimento</h3>
-  <p>De Infraestrutura para Engenharia de Software: Transformando problemas lógicos em soluções com Python e IA.</p>
-
-  <br>
-
-  <a href="https://gyliardson.github.io/gyliardson/">
-    <img src="https://img.shields.io/badge/✨_Visite_meu_Portfólio_Interativo-238636?style=for-the-badge&logo=github&logoColor=white" alt="Visite meu Portfólio">
-  </a>
-  <a href="https://gyliardson.github.io/gyliardson/Curriculo-Gyliardson.pdf">
-    <img src="https://img.shields.io/badge/📄_Ver_Currículo_PDF-b31b1b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Baixar Currículo">
-  </a>
-
+  <img src="profile-banner.jpg" alt="Professional Banner" width="100%">
 </div>
 
 ---
 
-### Sobre Mim
+## Português (BR)
 
-Sou estudante de Ciência da Computação (Previsão: 2027) com um perfil **autodidata e mais "mão na massa"**. Minha trajetória começou em **Infraestrutura e Suporte**, onde desenvolvi uma base sólida em hardware, redes e Linux.
+### Sobre
+Estudante de **Ciência da Computação (2027)** com sólida trajetória em **Infraestrutura e Redes**, agora focado integralmente em **Engenharia de Software e Inteligência Artificial**. Especializado no desenvolvimento de soluções robustas utilizando **Python (FastAPI)**, **TypeScript (React)** e integração de **LLMs locais**.
 
-Atualmente, migrei meu foco 100% para **Desenvolvimento e Inteligência Artificial**. Tenho experiência prática recente com Engenharia de Prompt e estou me aprofundando em arquiteturas de LLMs locais.
-
-- Trabalhando no desenvolvimento de pipelines de **IA Local (Ollama/Pytorch)**.
-- Estudando **Fine-tuning de modelos** e otimização de hardware.
-- **Soft Skills:** Resolução de problemas, aprendizado rápido e adaptação.
-
----
-
-### Tech Stack & Ferramentas
-
-**Inteligência Artificial & Backend** <br>
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-black?style=for-the-badge&logo=ollama&logoColor=white)
-
-**Web & Infraestrutura** <br>
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+- Atuação em desenvolvimento Full Stack e sistemas escaláveis.
+- Experiência em RAG (Retrieval-Augmented Generation) e automação de processos.
+- Foco em entregas de alta qualidade e performance técnica.
 
 ---
 
-### Meus Projetos
+## English
 
-Aqui concentro meus estudos práticos, desde a ideia até a implementação.
+### About
+**Computer Science student (2027)** with a strong background in **Infrastructure and Networking**, now fully focused on **Software Engineering and Artificial Intelligence**. Specialized in building robust solutions using **Python (FastAPI)**, **TypeScript (React)**, and **local LLM** integration.
 
-| Projeto | Descrição & Tecnologias | Status |
-| :--- | :--- | :--- |
-| [**StudyFlash AI**](https://studyflash-ai.vercel.app/) | **Micro-SaaS de Estudo Ativo com IA**<br>Plataforma Full Stack que transforma textos em Flashcards instantâneos via Llama 3.<br>O projeto demonstra: **Next.js & FastAPI**, **Banco Relacional (Supabase)** e **Auth (Clerk)**.<br>[![Website](https://img.shields.io/badge/Acessar_Aplicação-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://studyflash-ai.vercel.app/)<br>![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white) | **MVP em Produção** |
-| [**Smart Feedback API**](https://github.com/Gyliardson/smart-feedback-api) | **Classificação de Chamados via IA Local**<br>Microsserviço REST que usa Llama 3 para automatizar a triagem de suporte.<br>O vídeo demonstra: **API Async (FastAPI)**, **Engenharia de Prompt (JSON)** e **Dockerização**.<br>[![YouTube](https://img.shields.io/badge/Ver_Demo_no_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/kz0MR9yiPKo) [![GitHub](https://img.shields.io/badge/Ver_Código-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gyliardson/smart-feedback-api)<br>![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white) | **Completo v1.0** |
-| [**Local RAG Assistant**](https://github.com/Gyliardson/local-rag-assistant) | **Chat Privado com Documentos (PDF)**<br>Assistente inteligente que roda 100% local para análise de dados sensíveis.<br>O vídeo demonstra: **Ingestão de arquivos**, **Processamento Vetorial** e **Respostas com citação de fontes**.<br>[![YouTube](https://img.shields.io/badge/Ver_Demo_no_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Lltl1Js1pmM) [![GitHub](https://img.shields.io/badge/Ver_Código-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gyliardson/local-rag-assistant)<br>![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python) ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white) ![LangChain](https://img.shields.io/badge/-LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) | **Completo v1.0** |
-| **Interface LLM Local** | **Interface de Chat & Controle de Parâmetros**<br>Sistema full-stack (Python + Web) para uso privado de LLMs.<br>O vídeo demonstra: **Login multi-perfil**, **Chat em tempo real** e **Ajuste de hiperparâmetros** (Top-k, Temperatura).<br>[![YouTube](https://img.shields.io/badge/Ver_Demo_no_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/cPk7GGeQorM)<br>![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python) ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) | **Prova de Conceito** |
+- Working on Full Stack development and scalable systems.
+- Experience with RAG (Retrieval-Augmented Generation) and process automation.
+- Focused on delivering high-quality results and technical performance.
 
 ---
 
-### 📫 Contato
+## Tech Stack
 
-<div align="left">
-  <a href="https://gyliardson.github.io/gyliardson/" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_Meu_Site-238636?style=for-the-badge&logo=github&logoColor=white" target="_blank">
-  </a>
-  <a href="https://linkedin.com/in/gyliardson-keitison" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
-  </a>
-  <a href="mailto:gyliardson@outlook.com">
-    <img src="https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
-  </a>
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-333333?style=flat&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/TypeScript-333333?style=flat&logo=typescript" alt="TS">
+  <img src="https://img.shields.io/badge/React-333333?style=flat&logo=react" alt="React">
+  <img src="https://img.shields.io/badge/FastAPI-333333?style=flat&logo=fastapi" alt="FastAPI">
+  <img src="https://img.shields.io/badge/TailwindCSS-333333?style=flat&logo=tailwind-css" alt="Tailwind">
+  <img src="https://img.shields.io/badge/Docker-333333?style=flat&logo=docker" alt="Docker">
+  <img src="https://img.shields.io/badge/Supabase-333333?style=flat&logo=supabase" alt="Supabase">
+</div>
+
+---
+
+## Projetos | Projects
+
+### FinanceFlow
+**Controle Financeiro Inteligente | Intelligent Financial Management**
+Sistema completo de gestão financeira com backend em FastAPI, Mobile em React Native e integração com Google Gemini para insights e OCR.
+<br>
+`Python` • `React Native` • `FastAPI` • `Supabase`
+<br>
+[**Source Code**](https://github.com/Gyliardson/FinanceFlow) | [**Documentation**](https://github.com/Gyliardson/FinanceFlow#readme)
+
+---
+
+### StudyFlash AI
+**Estudo Ativo com IA | AI-Powered Active Study**
+Plataforma inovadora que utiliza o poder do Llama 3 para converter conteúdos complexos em flashcards memorizáveis automaticamente, focando em alta performance e arquitetura moderna.
+<br>
+`Next.js` • `FastAPI` • `Clerk` • `Supabase`
+<br>
+[**Live Demo**](https://studyflash-ai.vercel.app/) | [**Project Details (LinkedIn)**](https://www.linkedin.com/posts/gyliardson-keitison_softwareengineering-fullstack-nextjs-share-7404513766916468736-9FmG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADbIfyAB2OrMVq99eSS1sc-ANehI1gEh-D0)
+
+---
+
+### Smart Feedback API
+**Classificação de Chamados via IA | Ticket Classification via AI**
+Microsserviço que automatiza a triagem de tickets de suporte utilizando modelos de linguagem locais.
+<br>
+`Python` • `FastAPI` • `Docker` • `Ollama`
+<br>
+[**Demo Video**](https://youtu.be/kz0MR9yiPKo) | [**Source Code**](https://github.com/Gyliardson/smart-feedback-api)
+
+---
+
+### Local RAG Assistant
+**Análise de Documentos Offline | Offline Document Analysis**
+Assistente inteligente para chat privado com arquivos PDF, garantindo privacidade total dos dados.
+<br>
+`Python` • `LangChain` • `Streamlit` • `ChromaDB`
+<br>
+[**Demo Video**](https://youtu.be/Lltl1Js1pmM) | [**Source Code**](https://github.com/Gyliardson/local-rag-assistant)
+
+---
+
+### Contact Info
+
+<div align="center">
+  <a href="https://linkedin.com/in/gyliardson-keitison">LinkedIn</a> |
+  <a href="https://gyliardson.github.io/gyliardson/">Portfolio</a> |
+  <a href="mailto:gyliardson@outlook.com">Email</a>
 </div>
