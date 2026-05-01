@@ -50,7 +50,7 @@ Plataforma completa de agregação e curadoria de notícias automatizada. Utiliz
 <br>
 `Next.js` • `Python` • `Supabase` • `Llama 3` • `Docker`
 <br>
-[**Source Code**](https://github.com/Gyliardson/little-mere-news) | [**Documentation**](https://github.com/Gyliardson/little-mere-news#readme)
+[**Live Demo**](https://little-mere-news.onrender.com/en) | [**Source Code**](https://github.com/Gyliardson/little-mere-news) | [**Documentation**](https://github.com/Gyliardson/little-mere-news#readme)
 
 ---
 
