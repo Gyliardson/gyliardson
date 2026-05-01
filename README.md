@@ -44,6 +44,16 @@ Estudante de **Ciência da Computação (2027)** com sólida trajetória em **In
 
 ## Projetos | Projects
 
+### Little Mere News
+**Portal de Notícias com IA | AI-Powered News Portal**
+Plataforma completa de agregação e curadoria de notícias automatizada. Utiliza Python para scraping, Llama 3 para sumarização/tradução e Next.js para um portal SEO-friendly e Dashboard CMS seguro.
+<br>
+`Next.js` • `Python` • `Supabase` • `Llama 3` • `Docker`
+<br>
+[**Source Code**](https://github.com/Gyliardson/little-mere-news) | [**Documentation**](https://github.com/Gyliardson/little-mere-news#readme)
+
+---
+
 ### FinanceFlow
 **Controle Financeiro Inteligente | Intelligent Financial Management**
 Sistema completo de gestão financeira com backend em FastAPI, Mobile em React Native e integração com Google Gemini para insights e OCR.
