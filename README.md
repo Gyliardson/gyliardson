@@ -1,4 +1,4 @@
-# Gyliardson Keitison | Software Engineering & AI
+# Gyliardson Keitison | Software Developer & Process Automation
 
 <div align="center">
   <img src="profile-banner.jpg" alt="Professional Banner" width="100%">
@@ -9,22 +9,22 @@
 ## Português (BR)
 
 ### Sobre
-Estudante de **Ciência da Computação (2027)** com sólida trajetória em **Infraestrutura e Redes**, agora focado integralmente em **Engenharia de Software e Inteligência Artificial**. Especializado no desenvolvimento de soluções robustas utilizando **Python (FastAPI)**, **TypeScript (React)** e integração de **LLMs locais**.
+**Desenvolvedor de Software e Automação**, focado no desenvolvimento de sistemas internos e automatização de processos empresariais. Especializado na criação de soluções completas utilizando **Python (FastAPI)**, **TypeScript (React/Next.js)**, integração de APIs corporativas e **IA Aplicada**.
 
-- Atuação em desenvolvimento Full Stack e sistemas escaláveis.
-- Experiência em RAG (Retrieval-Augmented Generation) e automação de processos.
-- Foco em entregas de alta qualidade e performance técnica.
+- Desenvolvimento de sistemas corporativos B2B, painéis gerenciais e automação em lote.
+- Implantação e DevOps com Docker, pipelines de CI/CD (GitHub Actions) e administração de servidores.
+- Integração de modelos de IA (RAG, OCR, LLMs locais e em nuvem) para resolução de problemas reais de negócios.
 
 ---
 
 ## English
 
 ### About
-**Computer Science student (2027)** with a strong background in **Infrastructure and Networking**, now fully focused on **Software Engineering and Artificial Intelligence**. Specialized in building robust solutions using **Python (FastAPI)**, **TypeScript (React)**, and **local LLM** integration.
+**Software and Automation Developer**, focused on building internal systems and automating business processes. Specialized in creating end-to-end solutions using **Python (FastAPI)**, **TypeScript (React/Next.js)**, enterprise API integrations, and **Applied AI**.
 
-- Working on Full Stack development and scalable systems.
-- Experience with RAG (Retrieval-Augmented Generation) and process automation.
-- Focused on delivering high-quality results and technical performance.
+- Development of B2B enterprise systems, management dashboards, and batch automation workflows.
+- Deployment and DevOps using Docker, CI/CD pipelines (GitHub Actions), and server administration.
+- Integration of AI models (RAG, OCR, local and cloud LLMs) to solve real-world business problems.
 
 ---
 
@@ -34,9 +34,11 @@ Estudante de **Ciência da Computação (2027)** com sólida trajetória em **In
   <img src="https://img.shields.io/badge/Python-333333?style=flat&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/TypeScript-333333?style=flat&logo=typescript" alt="TS">
   <img src="https://img.shields.io/badge/React-333333?style=flat&logo=react" alt="React">
+  <img src="https://img.shields.io/badge/Next.js-333333?style=flat&logo=next.js" alt="Next.js">
   <img src="https://img.shields.io/badge/FastAPI-333333?style=flat&logo=fastapi" alt="FastAPI">
   <img src="https://img.shields.io/badge/TailwindCSS-333333?style=flat&logo=tailwind-css" alt="Tailwind">
   <img src="https://img.shields.io/badge/Docker-333333?style=flat&logo=docker" alt="Docker">
+  <img src="https://img.shields.io/badge/Prisma-333333?style=flat&logo=prisma" alt="Prisma">
   <img src="https://img.shields.io/badge/Supabase-333333?style=flat&logo=supabase" alt="Supabase">
 </div>
 
@@ -44,9 +46,19 @@ Estudante de **Ciência da Computação (2027)** com sólida trajetória em **In
 
 ## Projetos | Projects
 
+### L'Mere Studio
+**SaaS Multi-Tenant para Confeitarias | Multi-Tenant SaaS for Bakeries**
+Plataforma corporativa white-label. Conta com um simulador de pedidos de 5 etapas para o cliente final e um painel CMS de administração para gestão de produtos, Kanban de fluxo de pedidos e customização visual da marca por lojista.
+<br>
+`Next.js` • `TypeScript` • `React` • `TailwindCSS` • `Prisma`
+<br>
+[**Live Demo**](https://lmere-studio.vercel.app) | [**Demo Video**](https://youtu.be/XpgxfHBhJoI)
+
+---
+
 ### Little Mere News
-**Portal de Notícias com IA | AI-Powered News Portal**
-Plataforma completa de agregação e curadoria de notícias automatizada. Utiliza Python para scraping, Llama 3 para sumarização/tradução e Next.js para um portal SEO-friendly e Dashboard CMS seguro.
+**Portal de Notícias Automatizado com IA | AI-Automated News Portal**
+Plataforma completa de agregação e curadoria de notícias automatizada. Utiliza Python para scraping, LLMs para sumarização/tradução e Next.js para um portal SEO-friendly e Dashboard CMS seguro.
 <br>
 `Next.js` • `Python` • `Supabase` • `Llama 3` • `Docker`
 <br>
@@ -55,8 +67,8 @@ Plataforma completa de agregação e curadoria de notícias automatizada. Utiliz
 ---
 
 ### FinanceFlow
-**Controle Financeiro Inteligente | Intelligent Financial Management**
-Sistema completo de gestão financeira com backend em FastAPI, Mobile em React Native e integração com Google Gemini para insights e OCR.
+**Gestão Financeira & OCR | Financial Management & OCR**
+Sistema corporativo de gestão financeira com backend em FastAPI, interface Mobile em React Native e integração com Google Gemini para leitura de comprovantes via OCR e geração de insights.
 <br>
 `Python` • `React Native` • `FastAPI` • `Supabase`
 <br>
@@ -66,7 +78,7 @@ Sistema completo de gestão financeira com backend em FastAPI, Mobile em React N
 
 ### StudyFlash AI
 **Estudo Ativo com IA | AI-Powered Active Study**
-Plataforma inovadora que utiliza o poder do Llama 3 para converter conteúdos complexos em flashcards memorizáveis automaticamente, focando em alta performance e arquitetura moderna.
+Plataforma que utiliza modelos de linguagem para converter conteúdos complexos em flashcards estruturados automaticamente, construída com foco em alta performance.
 <br>
 `Next.js` • `FastAPI` • `Clerk` • `Supabase`
 <br>
@@ -75,8 +87,8 @@ Plataforma inovadora que utiliza o poder do Llama 3 para converter conteúdos co
 ---
 
 ### Smart Feedback API
-**Classificação de Chamados via IA | Ticket Classification via AI**
-Microsserviço que automatiza a triagem de tickets de suporte utilizando modelos de linguagem locais.
+**Classificação de Chamados | Ticket Classification API**
+Microsserviço de backend que automatiza a triagem de tickets de suporte utilizando modelos de linguagem rodando localmente, garantindo eficiência e padronização.
 <br>
 `Python` • `FastAPI` • `Docker` • `Ollama`
 <br>
@@ -85,8 +97,8 @@ Microsserviço que automatiza a triagem de tickets de suporte utilizando modelos
 ---
 
 ### Local RAG Assistant
-**Análise de Documentos Offline | Offline Document Analysis**
-Assistente inteligente para chat privado com arquivos PDF, garantindo privacidade total dos dados.
+**Assistente de Documentos Offline | Offline Document Assistant**
+Aplicação corporativa de análise de documentos PDF. Garante privacidade total rodando 100% offline através de vetorização e geração baseadas em hardware local.
 <br>
 `Python` • `LangChain` • `Streamlit` • `ChromaDB`
 <br>
