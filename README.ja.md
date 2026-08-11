@@ -32,6 +32,15 @@
 
 **応用AI:** RAG · OCR · LLM連携 · Gemini · Ollama · LangChain · ローカルAIワークフロー
 
+## GitHubでの活動
+
+<div align="center">
+  <img src="assets/stats/stats-ja.svg" width="420" alt="GyliardsonのGitHubでの活動">
+  <img src="assets/stats/languages-ja.svg" width="420" alt="Gyliardsonのリポジトリでよく使われる言語">
+</div>
+
+<p align="center"><sub>公開されているGitHub上の活動と、リポジトリ内の言語構成を表示しています。言語の使用量は習熟度を示すものではありません。</sub></p>
+
 ## 主なプロジェクト
 
 ### MangaSensei

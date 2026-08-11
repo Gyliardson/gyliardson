@@ -32,6 +32,15 @@ Na posição atual, atuo em todo o ciclo de entrega, desde arquitetura e impleme
 
 **IA Aplicada:** RAG · OCR · integração com LLMs · Gemini · Ollama · LangChain · fluxos de IA local
 
+## Atividade no GitHub
+
+<div align="center">
+  <img src="assets/stats/stats-pt-br.svg" width="420" alt="Atividade de Gyliardson no GitHub">
+  <img src="assets/stats/languages-pt-br.svg" width="420" alt="Linguagens mais usadas nos repositórios de Gyliardson">
+</div>
+
+<p align="center"><sub>Atividade pública no GitHub e distribuição de linguagens nos repositórios. O uso de linguagens não representa nível de proficiência.</sub></p>
+
 ## Projetos em destaque
 
 ### MangaSensei

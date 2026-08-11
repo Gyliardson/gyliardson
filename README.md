@@ -32,6 +32,15 @@ In my current role, I work across the complete delivery cycle, from architecture
 
 **Applied AI:** RAG · OCR · LLM integrations · Gemini · Ollama · LangChain · local AI workflows
 
+## GitHub Activity
+
+<div align="center">
+  <img src="assets/stats/stats-en.svg" width="420" alt="Gyliardson GitHub activity">
+  <img src="assets/stats/languages-en.svg" width="420" alt="Gyliardson most used languages">
+</div>
+
+<p align="center"><sub>Public GitHub activity and repository language distribution. Language usage is not a measure of proficiency.</sub></p>
+
 ## Highlighted projects
 
 ### MangaSensei
