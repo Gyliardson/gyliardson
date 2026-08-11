@@ -32,25 +32,41 @@
         ::-webkit-scrollbar-track { background: #0d1117; }
         ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 5px; }
         ::-webkit-scrollbar-thumb:hover { background: #58a6ff; }
+        .lang-menu.hidden { display: none; }
     </style>
 </head>
 <body class="antialiased selection:bg-gh-link selection:text-white">
 
     <nav class="fixed w-full z-50 bg-gh-header/90 backdrop-blur-md border-b border-gh-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-2">
+            <div class="flex items-center justify-between h-16 gap-3">
+                <div class="flex items-center space-x-2 shrink-0">
                     <i class="fa-brands fa-github text-3xl text-white"></i>
                     <span class="font-bold text-xl tracking-tight text-white">Gyli<span class="text-gh-link">.dev</span></span>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8 font-mono text-sm">
-                        <a href="#about" class="hover:text-white transition">~/sobre_mim</a>
-                        <a href="#projects" class="hover:text-white transition">~/meus_projetos</a>
-                        <a href="#hobbies" class="hover:text-white transition">~/off_topic</a>
+                <div class="hidden lg:block">
+                    <div class="flex items-baseline space-x-7 font-mono text-sm">
+                        <a href="#about" class="hover:text-white transition" data-i18n="nav.about">~/sobre_mim</a>
+                        <a href="#projects" class="hover:text-white transition" data-i18n="nav.projects">~/meus_projetos</a>
+                        <a href="#hobbies" class="hover:text-white transition" data-i18n="nav.hobbies">~/off_topic</a>
                     </div>
                 </div>
-                <a href="#contact" class="bg-gh-btn hover:bg-gh-btnHover text-white px-4 py-2 rounded-md text-sm font-bold transition border border-white/10">Mandar oi :D</a>
+                <div class="flex items-center gap-2">
+                    <div class="relative" id="language-switcher">
+                        <button id="language-button" type="button" class="inline-flex items-center gap-2 bg-gh-card hover:bg-gh-border border border-gh-border text-gh-text px-3 py-2 rounded-md text-sm font-mono transition" aria-haspopup="true" aria-expanded="false" title="Language">
+                            <i class="fa-solid fa-globe text-gh-link"></i>
+                            <span id="language-code">PT-BR</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] text-gh-muted"></i>
+                        </button>
+                        <div id="language-menu" class="lang-menu hidden absolute right-0 mt-2 w-44 overflow-hidden rounded-md border border-gh-border bg-gh-card shadow-2xl">
+                            <button type="button" data-lang="pt-BR" class="lang-option w-full px-4 py-2.5 text-left text-sm hover:bg-gh-border transition flex items-center justify-between"><span>Português</span><span class="font-mono text-xs text-gh-muted">PT-BR</span></button>
+                            <button type="button" data-lang="en" class="lang-option w-full px-4 py-2.5 text-left text-sm hover:bg-gh-border transition flex items-center justify-between"><span>English</span><span class="font-mono text-xs text-gh-muted">EN</span></button>
+                            <button type="button" data-lang="es" class="lang-option w-full px-4 py-2.5 text-left text-sm hover:bg-gh-border transition flex items-center justify-between"><span>Español</span><span class="font-mono text-xs text-gh-muted">ES</span></button>
+                            <button type="button" data-lang="ja" class="lang-option w-full px-4 py-2.5 text-left text-sm hover:bg-gh-border transition flex items-center justify-between"><span>日本語</span><span class="font-mono text-xs text-gh-muted">JA</span></button>
+                        </div>
+                    </div>
+                    <a href="#contact" class="hidden sm:inline-flex bg-gh-btn hover:bg-gh-btnHover text-white px-4 py-2 rounded-md text-sm font-bold transition border border-white/10" data-i18n="nav.contact">Mandar oi :D</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -59,24 +75,16 @@
         <div class="max-w-4xl mx-auto">
             <div class="bg-gh-card border border-gh-border rounded-lg shadow-2xl overflow-hidden">
                 <div class="bg-gh-header px-4 py-2 border-b border-gh-border flex items-center space-x-2">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div>
                     <span class="ml-4 text-xs text-gh-muted font-mono">gyli@dev:~/portfolio</span>
                 </div>
                 <div class="p-6 font-mono text-sm sm:text-base space-y-4">
                     <div class="flex"><span class="text-gh-link mr-2">➜</span><span class="text-purple-400 mr-2">~</span><span id="typewriter" class="terminal-cursor text-white"></span></div>
                     <div id="terminal-output" class="hidden text-gh-muted space-y-2">
-                        <p>> Carregando projetos... [OK]</p>
-                        <p>> Subindo containers... [OK]</p>
-                        <p>> Café detectado... [READY]</p>
-                        <br>
-                        <h1 class="text-3xl sm:text-5xl font-bold text-white mb-2">Opa, sou o Gyliardson!</h1>
-                        <p class="text-xl text-gh-link">Mas pode me chamar de Gyli.</p>
-                        <p class="max-w-2xl text-gh-text mt-4">
-                            Desenvolvedor de Software focado em <strong>Full Stack, Automação de Processos e IA Aplicada</strong>.
-                            Trabalho principalmente com <strong>Python, JavaScript/TypeScript, React/Next.js, FastAPI, PostgreSQL e Docker</strong>, construindo soluções corporativas do código ao deploy.
-                        </p>
+                        <p data-i18n="hero.log1">> Carregando projetos... [OK]</p><p data-i18n="hero.log2">> Subindo containers... [OK]</p><p data-i18n="hero.log3">> Café detectado... [READY]</p><br>
+                        <h1 class="text-3xl sm:text-5xl font-bold text-white mb-2" data-i18n="hero.title">Opa, sou o Gyliardson!</h1>
+                        <p class="text-xl text-gh-link" data-i18n="hero.nickname">Mas pode me chamar de Gyli.</p>
+                        <p class="max-w-2xl text-gh-text mt-4" data-i18n-html="hero.description">Desenvolvedor de Software focado em <strong>Full Stack, Automação de Processos e IA Aplicada</strong>. Trabalho principalmente com <strong>Python, JavaScript/TypeScript, React/Next.js, FastAPI, PostgreSQL e Docker</strong>, construindo soluções corporativas do código ao deploy.</p>
                         <div class="flex space-x-4 pt-5">
                             <a href="https://github.com/Gyliardson" target="_blank" class="text-2xl hover:text-white transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
                             <a href="https://linkedin.com/in/gyliardson-keitison" target="_blank" class="text-2xl hover:text-blue-500 transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
@@ -91,42 +99,21 @@
 
     <section id="about" class="py-16 border-t border-gh-border">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-2xl font-bold text-white mb-8 flex items-center font-mono"><span class="text-gh-link mr-2">#</span> cat sobre_mim.txt</h2>
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center font-mono"><span class="text-gh-link mr-2">#</span> <span data-i18n="about.command">cat sobre_mim.txt</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gh-card p-6 rounded-lg border border-gh-border h-full hover:border-gh-muted transition">
-                    <h3 class="text-white font-bold mb-2 flex items-center"><i class="fa-solid fa-code text-gh-link mr-2"></i> Software ponta a ponta</h3>
-                    <p class="text-sm text-gh-text leading-relaxed">Atuo da arquitetura e implementação ao deploy, monitoramento e manutenção. Minha base anterior em infraestrutura ajuda a construir aplicações pensando também em operação, confiabilidade e custo.</p>
-                </div>
-                <div class="bg-gh-card p-6 rounded-lg border border-gh-border h-full hover:border-gh-muted transition">
-                    <h3 class="text-white font-bold mb-2 flex items-center"><i class="fa-solid fa-brain text-gh-link mr-2"></i> IA aplicada</h3>
-                    <p class="text-sm text-gh-text leading-relaxed">Trabalho com RAG, OCR, LLMs locais e em nuvem, automações e integrações. Prefiro IA como componente de uma arquitetura maior, com dados, validação, segurança e observabilidade.</p>
-                </div>
-                <div class="bg-gh-card p-6 rounded-lg border border-gh-border h-full hover:border-gh-muted transition">
-                    <h3 class="text-white font-bold mb-2 flex items-center"><i class="fa-solid fa-gears text-gh-muted mr-2"></i> Automação de processos</h3>
-                    <p class="text-sm text-gh-text leading-relaxed">Desenvolvo rotinas, integrações, scrapers e sistemas internos para eliminar trabalho repetitivo e centralizar operações que antes dependiam de tarefas manuais.</p>
-                </div>
-                <div class="bg-gh-card p-6 rounded-lg border border-gh-border h-full hover:border-gh-muted transition">
-                    <h3 class="text-white font-bold mb-2 flex items-center"><i class="fa-solid fa-server text-gh-muted mr-2"></i> DevOps & Infra</h3>
-                    <p class="text-sm text-gh-text leading-relaxed">Docker, GitHub Actions, CI/CD, Linux, VMs e monitoramento fazem parte do meu fluxo para manter projetos reproduzíveis e fáceis de operar.</p>
-                </div>
+                <div class="bg-gh-card p-6 rounded-lg border border-gh-border h-full hover:border-gh-muted transition"><h3 class="text-white font-bold mb-2 flex items-center"><i class="fa-solid fa-code text-gh-link mr-2"></i><span data-i18n="about.fullstackTitle">Software ponta a ponta</span></h3><p class="text-sm text-gh-text leading-relaxed" data-i18n="about.fullstackText">Atuo da arquitetura e implementação ao deploy, monitoramento e manutenção. Minha base anterior em infraestrutura ajuda a construir aplicações pensando também em operação, confiabilidade e custo.</p></div>
+                <div class="bg-gh-card p-6 rounded-lg border border-gh-border h-full hover:border-gh-muted transition"><h3 class="text-white font-bold mb-2 flex items-center"><i class="fa-solid fa-brain text-gh-link mr-2"></i><span data-i18n="about.aiTitle">IA aplicada</span></h3><p class="text-sm text-gh-text leading-relaxed" data-i18n="about.aiText">Trabalho com RAG, OCR, LLMs locais e em nuvem, automações e integrações. Prefiro IA como componente de uma arquitetura maior, com dados, validação, segurança e observabilidade.</p></div>
+                <div class="bg-gh-card p-6 rounded-lg border border-gh-border h-full hover:border-gh-muted transition"><h3 class="text-white font-bold mb-2 flex items-center"><i class="fa-solid fa-gears text-gh-muted mr-2"></i><span data-i18n="about.automationTitle">Automação de processos</span></h3><p class="text-sm text-gh-text leading-relaxed" data-i18n="about.automationText">Desenvolvo rotinas, integrações, scrapers e sistemas internos para eliminar trabalho repetitivo e centralizar operações que antes dependiam de tarefas manuais.</p></div>
+                <div class="bg-gh-card p-6 rounded-lg border border-gh-border h-full hover:border-gh-muted transition"><h3 class="text-white font-bold mb-2 flex items-center"><i class="fa-solid fa-server text-gh-muted mr-2"></i><span data-i18n="about.devopsTitle">DevOps & Infra</span></h3><p class="text-sm text-gh-text leading-relaxed" data-i18n="about.devopsText">Docker, GitHub Actions, CI/CD, Linux, VMs e monitoramento fazem parte do meu fluxo para manter projetos reproduzíveis e fáceis de operar.</p></div>
             </div>
         </div>
     </section>
 
     <section class="py-16 bg-gh-header border-y border-gh-border">
         <div class="max-w-5xl mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold text-white mb-10 font-mono">./minha_stack.sh</h2>
+            <h2 class="text-2xl font-bold text-white mb-10 font-mono" data-i18n="stack.command">./minha_stack.sh</h2>
             <div class="flex flex-wrap justify-center gap-3 font-mono text-sm">
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">Python</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">TypeScript</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">React</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">Next.js</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">Node.js</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">FastAPI</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">PostgreSQL</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">Docker</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">GitHub Actions</span>
-                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">RAG / OCR / LLMs</span>
+                <span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">Python</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">TypeScript</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">React</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">Next.js</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">Node.js</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">FastAPI</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">PostgreSQL</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">Docker</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">GitHub Actions</span><span class="bg-gh-card px-4 py-2 rounded-full border border-gh-border">RAG / OCR / LLMs</span>
             </div>
         </div>
     </section>
@@ -135,115 +122,128 @@
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-2xl font-bold text-white mb-8 flex items-center font-mono"><span class="text-gh-link mr-2">#</span> git log --oneline</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
                 <article class="md:col-span-2 bg-gh-card rounded-lg border border-gh-link/60 p-6 hover:border-gh-link transition group">
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
-                        <div class="flex items-center text-gh-link"><i class="fa-solid fa-language mr-2"></i><h3 class="font-bold text-xl group-hover:underline">MangaSensei</h3></div>
-                        <span class="self-start text-xs bg-blue-950 text-blue-300 px-2 py-1 rounded-full border border-blue-800">Em desenvolvimento ativo</span>
-                    </div>
-                    <p class="text-sm text-gh-text mb-4">Workspace local-first para leitura de mangás e estudo de japonês. Preserva a página original e executa OCR e análise linguística localmente, com enriquecimento contextual por IA opcional.</p>
-                    <p class="text-xs text-gh-muted mb-5">Arquitetura com React Reader, FastAPI, fila PostgreSQL, worker assíncrono, OCR local, Sudachi/JMdict, Gemini opcional, Docker Compose, testes full-stack, CI e contratos explícitos de privacidade/segurança.</p>
-                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-mono">
-                        <span class="px-2 py-0.5 bg-gh-border rounded">React</span><span class="px-2 py-0.5 bg-gh-border rounded">FastAPI</span><span class="px-2 py-0.5 bg-gh-border rounded">PostgreSQL</span><span class="px-2 py-0.5 bg-gh-border rounded">Docker</span><span class="px-2 py-0.5 bg-gh-border rounded">OCR</span><span class="px-2 py-0.5 bg-gh-border rounded">Sudachi/JMdict</span><span class="px-2 py-0.5 bg-gh-border rounded">Gemini</span>
-                    </div>
-                    <a href="https://github.com/Gyliardson/mangasensei" target="_blank" class="inline-block text-sm bg-gh-btn hover:bg-gh-btnHover text-white px-3 py-1.5 rounded-md border border-white/10 transition"><i class="fa-brands fa-github mr-1"></i> Código & Documentação</a>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4"><div class="flex items-center text-gh-link"><i class="fa-solid fa-language mr-2"></i><h3 class="font-bold text-xl group-hover:underline">MangaSensei</h3></div><span class="self-start text-xs bg-blue-950 text-blue-300 px-2 py-1 rounded-full border border-blue-800" data-i18n="projects.mangaStatus">Em desenvolvimento ativo</span></div>
+                    <p class="text-sm text-gh-text mb-4" data-i18n="projects.mangaText">Workspace local-first para leitura de mangás e estudo de japonês. Preserva a página original e executa OCR e análise linguística localmente, com enriquecimento contextual por IA opcional.</p>
+                    <p class="text-xs text-gh-muted mb-5" data-i18n="projects.mangaArchitecture">Arquitetura com React Reader, FastAPI, fila PostgreSQL, worker assíncrono, OCR local, Sudachi/JMdict, Gemini opcional, Docker Compose, testes full-stack, CI e contratos explícitos de privacidade/segurança.</p>
+                    <div class="flex flex-wrap gap-2 mb-6 text-xs font-mono"><span class="px-2 py-0.5 bg-gh-border rounded">React</span><span class="px-2 py-0.5 bg-gh-border rounded">FastAPI</span><span class="px-2 py-0.5 bg-gh-border rounded">PostgreSQL</span><span class="px-2 py-0.5 bg-gh-border rounded">Docker</span><span class="px-2 py-0.5 bg-gh-border rounded">OCR</span><span class="px-2 py-0.5 bg-gh-border rounded">Sudachi/JMdict</span><span class="px-2 py-0.5 bg-gh-border rounded">Gemini</span></div>
+                    <a href="https://github.com/Gyliardson/mangasensei" target="_blank" class="inline-block text-sm bg-gh-btn hover:bg-gh-btnHover text-white px-3 py-1.5 rounded-md border border-white/10 transition"><i class="fa-brands fa-github mr-1"></i> <span data-i18n="projects.codeDocs">Código & Documentação</span></a>
                 </article>
-
-                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition">
-                    <h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-store mr-2"></i>L'Mere Studio</h3>
-                    <p class="text-sm mb-4">SaaS white-label e CMS para confeitarias, com simulador de pedidos, Kanban e customização por lojista.</p>
-                    <p class="text-xs text-gh-muted mb-5">Next.js · TypeScript · React · Prisma · Tailwind</p>
-                    <div class="flex gap-3"><a href="https://lmere-studio.vercel.app" target="_blank" class="text-sm text-gh-link hover:underline">Demo</a><a href="https://youtu.be/XpgxfHBhJoI" target="_blank" class="text-sm text-gh-link hover:underline">Vídeo</a></div>
-                </article>
-
-                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition">
-                    <h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-newspaper mr-2"></i>Little Mere News</h3>
-                    <p class="text-sm mb-4">Portal bilíngue de notícias com scraping, sumarização/tradução por LLM, CMS e processamento híbrido local/cloud.</p>
-                    <p class="text-xs text-gh-muted mb-5">Next.js · Python · Supabase · Llama 3 · Docker</p>
-                    <div class="flex gap-3"><a href="https://little-mere-news.onrender.com/en" target="_blank" class="text-sm text-gh-link hover:underline">Demo</a><a href="https://github.com/Gyliardson/little-mere-news" target="_blank" class="text-sm text-gh-link hover:underline">Código</a></div>
-                </article>
-
-                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition">
-                    <h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-wallet mr-2"></i>FinanceFlow</h3>
-                    <p class="text-sm mb-4">Gestão financeira com API FastAPI, app React Native, OCR de comprovantes, IA, notificações e modo offline.</p>
-                    <p class="text-xs text-gh-muted mb-5">FastAPI · React Native · Supabase · Gemini · Docker</p>
-                    <a href="https://github.com/Gyliardson/FinanceFlow" target="_blank" class="text-sm text-gh-link hover:underline">Código & Documentação</a>
-                </article>
-
-                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition">
-                    <h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-bolt mr-2"></i>StudyFlash AI</h3>
-                    <p class="text-sm mb-4">Plataforma Full Stack que converte conteúdos de estudo em flashcards estruturados usando LLMs.</p>
-                    <p class="text-xs text-gh-muted mb-5">Next.js · FastAPI · Clerk · Supabase</p>
-                    <a href="https://studyflash-ai.vercel.app/" target="_blank" class="text-sm text-gh-link hover:underline">Demo</a>
-                </article>
-
-                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition">
-                    <h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-book-open mr-2"></i>Local RAG Assistant</h3>
-                    <p class="text-sm mb-4">Assistente offline para conversar com PDFs, com vetorização, recuperação de contexto e LLM local.</p>
-                    <p class="text-xs text-gh-muted mb-5">Python · LangChain · Streamlit · ChromaDB · Ollama</p>
-                    <a href="https://github.com/Gyliardson/local-rag-assistant" target="_blank" class="text-sm text-gh-link hover:underline">Código</a>
-                </article>
-
-                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition">
-                    <h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-server mr-2"></i>Smart Feedback API</h3>
-                    <p class="text-sm mb-4">API de triagem de tickets com análise de sentimento, prioridade, categorização e LLM local.</p>
-                    <p class="text-xs text-gh-muted mb-5">FastAPI · Docker · Ollama · Pydantic</p>
-                    <a href="https://github.com/Gyliardson/smart-feedback-api" target="_blank" class="text-sm text-gh-link hover:underline">Código</a>
-                </article>
+                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition"><h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-store mr-2"></i>L'Mere Studio</h3><p class="text-sm mb-4" data-i18n="projects.lmereText">SaaS white-label e CMS para confeitarias, com simulador de pedidos, Kanban e customização por lojista.</p><p class="text-xs text-gh-muted mb-5">Next.js · TypeScript · React · Prisma · Tailwind</p><div class="flex gap-3"><a href="https://lmere-studio.vercel.app" target="_blank" class="text-sm text-gh-link hover:underline">Demo</a><a href="https://youtu.be/XpgxfHBhJoI" target="_blank" class="text-sm text-gh-link hover:underline" data-i18n="projects.video">Vídeo</a></div></article>
+                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition"><h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-newspaper mr-2"></i>Little Mere News</h3><p class="text-sm mb-4" data-i18n="projects.newsText">Portal bilíngue de notícias com scraping, sumarização/tradução por LLM, CMS e processamento híbrido local/cloud.</p><p class="text-xs text-gh-muted mb-5">Next.js · Python · Supabase · Llama 3 · Docker</p><div class="flex gap-3"><a href="https://little-mere-news.onrender.com/en" target="_blank" class="text-sm text-gh-link hover:underline">Demo</a><a href="https://github.com/Gyliardson/little-mere-news" target="_blank" class="text-sm text-gh-link hover:underline" data-i18n="projects.code">Código</a></div></article>
+                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition"><h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-wallet mr-2"></i>FinanceFlow</h3><p class="text-sm mb-4" data-i18n="projects.financeText">Gestão financeira com API FastAPI, app React Native, OCR de comprovantes, IA, notificações e modo offline.</p><p class="text-xs text-gh-muted mb-5">FastAPI · React Native · Supabase · Gemini · Docker</p><a href="https://github.com/Gyliardson/FinanceFlow" target="_blank" class="text-sm text-gh-link hover:underline" data-i18n="projects.codeDocs">Código & Documentação</a></article>
+                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition"><h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-bolt mr-2"></i>StudyFlash AI</h3><p class="text-sm mb-4" data-i18n="projects.studyText">Plataforma Full Stack que converte conteúdos de estudo em flashcards estruturados usando LLMs.</p><p class="text-xs text-gh-muted mb-5">Next.js · FastAPI · Clerk · Supabase</p><a href="https://studyflash-ai.vercel.app/" target="_blank" class="text-sm text-gh-link hover:underline">Demo</a></article>
+                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition"><h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-book-open mr-2"></i>Local RAG Assistant</h3><p class="text-sm mb-4" data-i18n="projects.ragText">Assistente offline para conversar com PDFs, com vetorização, recuperação de contexto e LLM local.</p><p class="text-xs text-gh-muted mb-5">Python · LangChain · Streamlit · ChromaDB · Ollama</p><a href="https://github.com/Gyliardson/local-rag-assistant" target="_blank" class="text-sm text-gh-link hover:underline" data-i18n="projects.code">Código</a></article>
+                <article class="bg-gh-card rounded-lg border border-gh-border p-6 hover:border-gh-muted transition"><h3 class="font-bold text-lg text-gh-link mb-3"><i class="fa-solid fa-server mr-2"></i>Smart Feedback API</h3><p class="text-sm mb-4" data-i18n="projects.feedbackText">API de triagem de tickets com análise de sentimento, prioridade, categorização e LLM local.</p><p class="text-xs text-gh-muted mb-5">FastAPI · Docker · Ollama · Pydantic</p><a href="https://github.com/Gyliardson/smart-feedback-api" target="_blank" class="text-sm text-gh-link hover:underline" data-i18n="projects.code">Código</a></article>
             </div>
         </div>
     </section>
 
     <section class="py-16 px-4 border-y border-gh-border bg-gh-header/70">
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-gh-card border border-gh-link/50 rounded-lg p-6 sm:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 shadow-xl">
-                <div class="max-w-2xl">
-                    <p class="font-mono text-xs text-gh-link mb-3">$ ./iniciar_projeto.sh</p>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Tem um projeto em mente?</h2>
-                    <p class="text-gh-text leading-relaxed">Se você precisa de um sistema interno, automação, dashboard, integração ou site, tenho uma página separada com exemplos, demos interativas e um diagnóstico inicial para projetos.</p>
-                    <p class="text-xs text-gh-muted mt-4 font-mono">Projetos sob medida · contato direto · escopo técnico</p>
-                </div>
-                <div class="shrink-0">
-                    <a href="https://gylidev.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gh-btn hover:bg-gh-btnHover text-white px-5 py-3 rounded-md font-bold transition border border-white/10">
-                        Conhecer o GyliDev <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-sm"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <div class="max-w-4xl mx-auto"><div class="bg-gh-card border border-gh-link/50 rounded-lg p-6 sm:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 shadow-xl">
+            <div class="max-w-2xl"><p class="font-mono text-xs text-gh-link mb-3" data-i18n="cta.command">$ ./iniciar_projeto.sh</p><h2 class="text-2xl sm:text-3xl font-bold text-white mb-3" data-i18n="cta.title">Tem um projeto em mente?</h2><p class="text-gh-text leading-relaxed" data-i18n="cta.text">Se você precisa de um sistema interno, automação, dashboard, integração ou site, tenho uma página separada com exemplos, demos interativas e um diagnóstico inicial para projetos.</p><p class="text-xs text-gh-muted mt-4 font-mono" data-i18n="cta.meta">Projetos sob medida · contato direto · escopo técnico</p></div>
+            <div class="shrink-0"><a href="https://gylidev.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gh-btn hover:bg-gh-btnHover text-white px-5 py-3 rounded-md font-bold transition border border-white/10"><span data-i18n="cta.button">Conhecer o GyliDev</span> <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-sm"></i></a></div>
+        </div></div>
     </section>
 
     <section id="hobbies" class="py-16 bg-gh-header border-t border-gh-border">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-2xl font-bold text-white mb-8 flex items-center font-mono"><span class="text-gh-link mr-2">#</span> whoami --verbose</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gh-card p-6 rounded-lg border border-gh-border"><h3 class="text-white font-bold mb-3"><i class="fa-solid fa-gamepad text-purple-500 mr-2"></i>Reset</h3><p class="text-sm">Quando travo em algum bug, gosto de abrir Minecraft, xadrez ou algum jogo de estratégia para mudar o contexto e voltar com a cabeça mais limpa.</p></div>
-                <div class="bg-gh-card p-6 rounded-lg border border-gh-border"><h3 class="text-white font-bold mb-3"><i class="fa-solid fa-headphones text-green-500 mr-2"></i>Coding Vibe</h3><p class="text-sm">Twenty One Pilots, Linkin Park, System of a Down, Bruno Mars e bastante música japonesa enquanto programo.</p></div>
-            </div>
-        </div>
+        <div class="max-w-4xl mx-auto px-4"><h2 class="text-2xl font-bold text-white mb-8 flex items-center font-mono"><span class="text-gh-link mr-2">#</span> whoami --verbose</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gh-card p-6 rounded-lg border border-gh-border"><h3 class="text-white font-bold mb-3"><i class="fa-solid fa-gamepad text-purple-500 mr-2"></i><span data-i18n="hobbies.resetTitle">Reset</span></h3><p class="text-sm" data-i18n="hobbies.resetText">Quando travo em algum bug, gosto de abrir Minecraft, xadrez ou algum jogo de estratégia para mudar o contexto e voltar com a cabeça mais limpa.</p></div>
+            <div class="bg-gh-card p-6 rounded-lg border border-gh-border"><h3 class="text-white font-bold mb-3"><i class="fa-solid fa-headphones text-green-500 mr-2"></i><span data-i18n="hobbies.musicTitle">Coding Vibe</span></h3><p class="text-sm" data-i18n="hobbies.musicText">Twenty One Pilots, Linkin Park, System of a Down, Bruno Mars e bastante música japonesa enquanto programo.</p></div>
+        </div></div>
     </section>
 
     <footer id="contact" class="py-12 text-center border-t border-gh-border bg-gh-header">
-        <h2 class="text-2xl font-bold text-white mb-6">Bora criar uma solução juntos?</h2>
-        <p class="text-gh-muted max-w-lg mx-auto mb-8">Desenvolvimento Full Stack, automação, integrações, IA aplicada e sistemas corporativos.</p>
-        <a href="mailto:gyliardson@outlook.com" class="inline-block bg-gh-btn hover:bg-gh-btnHover text-white px-8 py-3 rounded-md font-bold text-lg transition border border-white/10">Mandar Email</a>
-        <div class="mt-12 text-xs text-gh-muted font-mono"><p>Feito por mim (Gyli) e hospedado no GitHub Pages.</p><p class="mt-2">System.exit(0); // Fui!</p></div>
+        <h2 class="text-2xl font-bold text-white mb-6" data-i18n="footer.title">Bora criar uma solução juntos?</h2><p class="text-gh-muted max-w-lg mx-auto mb-8" data-i18n="footer.text">Desenvolvimento Full Stack, automação, integrações, IA aplicada e sistemas corporativos.</p><a href="mailto:gyliardson@outlook.com" class="inline-block bg-gh-btn hover:bg-gh-btnHover text-white px-8 py-3 rounded-md font-bold text-lg transition border border-white/10" data-i18n="footer.email">Mandar Email</a><div class="mt-12 text-xs text-gh-muted font-mono"><p data-i18n="footer.hosted">Feito por mim (Gyli) e hospedado no GitHub Pages.</p><p class="mt-2" data-i18n="footer.exit">System.exit(0); // Fui!</p></div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const text = "whoami";
-            const typeWriterElement = document.getElementById('typewriter');
-            const outputElement = document.getElementById('terminal-output');
-            let i = 0;
-            function type() {
-                if (i < text.length) {
-                    typeWriterElement.innerHTML += text.charAt(i++);
-                    setTimeout(type, 150);
-                } else {
-                    typeWriterElement.classList.remove('terminal-cursor');
-                    setTimeout(() => outputElement.classList.remove('hidden'), 300);
-                }
+        const translations = {
+            'pt-BR': {
+                metaDescription: 'Portfólio de Gyliardson Keitison | Desenvolvimento Full Stack, automação de processos e IA aplicada.', pageTitle: 'Gyliardson Keitison | Dev & IA',
+                nav: { about: '~/sobre_mim', projects: '~/meus_projetos', hobbies: '~/off_topic', contact: 'Mandar oi :D' },
+                hero: { log1: '> Carregando projetos... [OK]', log2: '> Subindo containers... [OK]', log3: '> Café detectado... [READY]', title: 'Opa, sou o Gyliardson!', nickname: 'Mas pode me chamar de Gyli.', description: 'Desenvolvedor de Software focado em <strong>Full Stack, Automação de Processos e IA Aplicada</strong>. Trabalho principalmente com <strong>Python, JavaScript/TypeScript, React/Next.js, FastAPI, PostgreSQL e Docker</strong>, construindo soluções corporativas do código ao deploy.' },
+                about: { command: 'cat sobre_mim.txt', fullstackTitle: 'Software ponta a ponta', fullstackText: 'Atuo da arquitetura e implementação ao deploy, monitoramento e manutenção. Minha base anterior em infraestrutura ajuda a construir aplicações pensando também em operação, confiabilidade e custo.', aiTitle: 'IA aplicada', aiText: 'Trabalho com RAG, OCR, LLMs locais e em nuvem, automações e integrações. Prefiro IA como componente de uma arquitetura maior, com dados, validação, segurança e observabilidade.', automationTitle: 'Automação de processos', automationText: 'Desenvolvo rotinas, integrações, scrapers e sistemas internos para eliminar trabalho repetitivo e centralizar operações que antes dependiam de tarefas manuais.', devopsTitle: 'DevOps & Infra', devopsText: 'Docker, GitHub Actions, CI/CD, Linux, VMs e monitoramento fazem parte do meu fluxo para manter projetos reproduzíveis e fáceis de operar.' },
+                stack: { command: './minha_stack.sh' },
+                projects: { mangaStatus: 'Em desenvolvimento ativo', mangaText: 'Workspace local-first para leitura de mangás e estudo de japonês. Preserva a página original e executa OCR e análise linguística localmente, com enriquecimento contextual por IA opcional.', mangaArchitecture: 'Arquitetura com React Reader, FastAPI, fila PostgreSQL, worker assíncrono, OCR local, Sudachi/JMdict, Gemini opcional, Docker Compose, testes full-stack, CI e contratos explícitos de privacidade/segurança.', codeDocs: 'Código & Documentação', lmereText: 'SaaS white-label e CMS para confeitarias, com simulador de pedidos, Kanban e customização por lojista.', video: 'Vídeo', newsText: 'Portal bilíngue de notícias com scraping, sumarização/tradução por LLM, CMS e processamento híbrido local/cloud.', code: 'Código', financeText: 'Gestão financeira com API FastAPI, app React Native, OCR de comprovantes, IA, notificações e modo offline.', studyText: 'Plataforma Full Stack que converte conteúdos de estudo em flashcards estruturados usando LLMs.', ragText: 'Assistente offline para conversar com PDFs, com vetorização, recuperação de contexto e LLM local.', feedbackText: 'API de triagem de tickets com análise de sentimento, prioridade, categorização e LLM local.' },
+                cta: { command: '$ ./iniciar_projeto.sh', title: 'Tem um projeto em mente?', text: 'Se você precisa de um sistema interno, automação, dashboard, integração ou site, tenho uma página separada com exemplos, demos interativas e um diagnóstico inicial para projetos.', meta: 'Projetos sob medida · contato direto · escopo técnico', button: 'Conhecer o GyliDev' },
+                hobbies: { resetTitle: 'Reset', resetText: 'Quando travo em algum bug, gosto de abrir Minecraft, xadrez ou algum jogo de estratégia para mudar o contexto e voltar com a cabeça mais limpa.', musicTitle: 'Coding Vibe', musicText: 'Twenty One Pilots, Linkin Park, System of a Down, Bruno Mars e bastante música japonesa enquanto programo.' },
+                footer: { title: 'Bora criar uma solução juntos?', text: 'Desenvolvimento Full Stack, automação, integrações, IA aplicada e sistemas corporativos.', email: 'Mandar Email', hosted: 'Feito por mim (Gyli) e hospedado no GitHub Pages.', exit: 'System.exit(0); // Fui!' }
+            },
+            en: {
+                metaDescription: 'Portfolio of Gyliardson Keitison | Full Stack development, process automation and Applied AI.', pageTitle: 'Gyliardson Keitison | Dev & AI',
+                nav: { about: '~/about_me', projects: '~/projects', hobbies: '~/off_topic', contact: 'Say hi :D' },
+                hero: { log1: '> Loading projects... [OK]', log2: '> Starting containers... [OK]', log3: '> Coffee detected... [READY]', title: "Hi, I'm Gyliardson!", nickname: 'But you can call me Gyli.', description: 'Software Developer focused on <strong>Full Stack, Process Automation and Applied AI</strong>. I mainly work with <strong>Python, JavaScript/TypeScript, React/Next.js, FastAPI, PostgreSQL and Docker</strong>, building business solutions from code to deployment.' },
+                about: { command: 'cat about_me.txt', fullstackTitle: 'End-to-end software', fullstackText: 'I work from architecture and implementation through deployment, monitoring and maintenance. My previous infrastructure background helps me build applications with operations, reliability and cost in mind.', aiTitle: 'Applied AI', aiText: 'I work with RAG, OCR, local and cloud LLMs, automation and integrations. I prefer AI as one component of a larger architecture with data, validation, security and observability.', automationTitle: 'Process automation', automationText: 'I build routines, integrations, scrapers and internal systems to remove repetitive work and centralize operations that previously depended on manual tasks.', devopsTitle: 'DevOps & Infra', devopsText: 'Docker, GitHub Actions, CI/CD, Linux, VMs and monitoring are part of my workflow for keeping projects reproducible and easy to operate.' },
+                stack: { command: './my_stack.sh' },
+                projects: { mangaStatus: 'Active development', mangaText: 'A local-first workspace for reading manga and studying Japanese. It preserves the original page while running OCR and linguistic analysis locally, with optional AI-powered contextual enrichment.', mangaArchitecture: 'Built with a React reader, FastAPI, PostgreSQL queue, asynchronous worker, local OCR, Sudachi/JMdict, optional Gemini, Docker Compose, full-stack tests, CI and explicit privacy/security contracts.', codeDocs: 'Code & Documentation', lmereText: 'White-label SaaS and CMS for bakeries, with an order simulator, Kanban workflow and per-tenant customization.', video: 'Video', newsText: 'Bilingual news portal with scraping, LLM summarization/translation, CMS and hybrid local/cloud batch processing.', code: 'Code', financeText: 'Financial management with a FastAPI API, React Native app, receipt OCR, AI, notifications and offline support.', studyText: 'Full Stack platform that turns study content into structured flashcards using LLMs.', ragText: 'Offline assistant for working with PDFs using vectorization, context retrieval and a local LLM.', feedbackText: 'Ticket triage API with sentiment analysis, priority, categorization and a local LLM.' },
+                cta: { command: '$ ./start_project.sh', title: 'Have a project in mind?', text: 'If you need an internal system, automation, dashboard, integration or website, I have a separate page with examples, interactive demos and an initial project assessment.', meta: 'Custom projects · direct contact · technical scope', button: 'Visit GyliDev' },
+                hobbies: { resetTitle: 'Reset', resetText: 'When I get stuck on a bug, I like to open Minecraft, chess or another strategy game, switch context and come back with a clearer head.', musicTitle: 'Coding Vibe', musicText: 'Twenty One Pilots, Linkin Park, System of a Down, Bruno Mars and plenty of Japanese music while I code.' },
+                footer: { title: 'Want to build something together?', text: 'Full Stack development, automation, integrations, Applied AI and business systems.', email: 'Send Email', hosted: 'Built by me (Gyli) and hosted on GitHub Pages.', exit: 'System.exit(0); // See you!' }
+            },
+            es: {
+                metaDescription: 'Portafolio de Gyliardson Keitison | Desarrollo Full Stack, automatización de procesos e IA aplicada.', pageTitle: 'Gyliardson Keitison | Dev & IA',
+                nav: { about: '~/sobre_mi', projects: '~/mis_proyectos', hobbies: '~/off_topic', contact: 'Di hola :D' },
+                hero: { log1: '> Cargando proyectos... [OK]', log2: '> Iniciando contenedores... [OK]', log3: '> Café detectado... [READY]', title: '¡Hola, soy Gyliardson!', nickname: 'Pero puedes llamarme Gyli.', description: 'Desarrollador de Software enfocado en <strong>Full Stack, Automatización de Procesos e IA Aplicada</strong>. Trabajo principalmente con <strong>Python, JavaScript/TypeScript, React/Next.js, FastAPI, PostgreSQL y Docker</strong>, creando soluciones empresariales desde el código hasta el despliegue.' },
+                about: { command: 'cat sobre_mi.txt', fullstackTitle: 'Software de punta a punta', fullstackText: 'Trabajo desde la arquitectura y la implementación hasta el despliegue, monitoreo y mantenimiento. Mi experiencia previa en infraestructura me ayuda a desarrollar aplicaciones considerando operación, confiabilidad y costos.', aiTitle: 'IA aplicada', aiText: 'Trabajo con RAG, OCR, LLMs locales y en la nube, automatizaciones e integraciones. Prefiero usar la IA como parte de una arquitectura mayor, con datos, validación, seguridad y observabilidad.', automationTitle: 'Automatización de procesos', automationText: 'Desarrollo rutinas, integraciones, scrapers y sistemas internos para eliminar tareas repetitivas y centralizar operaciones que antes dependían de trabajo manual.', devopsTitle: 'DevOps & Infra', devopsText: 'Docker, GitHub Actions, CI/CD, Linux, VMs y monitoreo forman parte de mi flujo para mantener proyectos reproducibles y fáciles de operar.' },
+                stack: { command: './mi_stack.sh' },
+                projects: { mangaStatus: 'En desarrollo activo', mangaText: 'Workspace local-first para leer manga y estudiar japonés. Conserva la página original y ejecuta OCR y análisis lingüístico localmente, con enriquecimiento contextual opcional mediante IA.', mangaArchitecture: 'Arquitectura con lector React, FastAPI, cola PostgreSQL, worker asíncrono, OCR local, Sudachi/JMdict, Gemini opcional, Docker Compose, pruebas full-stack, CI y contratos explícitos de privacidad y seguridad.', codeDocs: 'Código & Documentación', lmereText: 'SaaS white-label y CMS para pastelerías, con simulador de pedidos, flujo Kanban y personalización por comercio.', video: 'Video', newsText: 'Portal bilingüe de noticias con scraping, resumen/traducción mediante LLM, CMS y procesamiento por lotes híbrido local/cloud.', code: 'Código', financeText: 'Gestión financiera con API FastAPI, app React Native, OCR de comprobantes, IA, notificaciones y soporte offline.', studyText: 'Plataforma Full Stack que convierte contenido de estudio en flashcards estructuradas usando LLMs.', ragText: 'Asistente offline para trabajar con PDFs mediante vectorización, recuperación de contexto y un LLM local.', feedbackText: 'API de clasificación de tickets con análisis de sentimiento, prioridad, categorización y LLM local.' },
+                cta: { command: '$ ./iniciar_proyecto.sh', title: '¿Tienes un proyecto en mente?', text: 'Si necesitas un sistema interno, automatización, dashboard, integración o sitio web, tengo una página separada con ejemplos, demos interactivas y una evaluación inicial del proyecto.', meta: 'Proyectos a medida · contacto directo · alcance técnico', button: 'Conocer GyliDev' },
+                hobbies: { resetTitle: 'Reset', resetText: 'Cuando me atasco con algún bug, me gusta abrir Minecraft, ajedrez u otro juego de estrategia, cambiar de contexto y volver con la mente más despejada.', musicTitle: 'Coding Vibe', musicText: 'Twenty One Pilots, Linkin Park, System of a Down, Bruno Mars y bastante música japonesa mientras programo.' },
+                footer: { title: '¿Creamos algo juntos?', text: 'Desarrollo Full Stack, automatización, integraciones, IA aplicada y sistemas empresariales.', email: 'Enviar Email', hosted: 'Hecho por mí (Gyli) y alojado en GitHub Pages.', exit: 'System.exit(0); // ¡Nos vemos!' }
+            },
+            ja: {
+                metaDescription: 'Gyliardson Keitison のポートフォリオ | Full Stack 開発、業務自動化、応用AI。', pageTitle: 'Gyliardson Keitison | Dev & AI',
+                nav: { about: '~/自己紹介', projects: '~/プロジェクト', hobbies: '~/off_topic', contact: '連絡する :D' },
+                hero: { log1: '> プロジェクトを読み込み中... [OK]', log2: '> コンテナを起動中... [OK]', log3: '> コーヒーを検出... [READY]', title: 'こんにちは、Gyliardsonです！', nickname: 'Gyliと呼んでください。', description: '<strong>Full Stack、業務自動化、応用AI</strong>を中心に取り組むソフトウェア開発者です。主に<strong>Python、JavaScript/TypeScript、React/Next.js、FastAPI、PostgreSQL、Docker</strong>を使用し、実装からデプロイまで一貫して業務向けソリューションを開発しています。' },
+                about: { command: 'cat 自己紹介.txt', fullstackTitle: '一貫したソフトウェア開発', fullstackText: 'アーキテクチャ設計と実装から、デプロイ、監視、保守まで担当しています。インフラ分野での経験を活かし、運用性、信頼性、コストも考慮してアプリケーションを構築しています。', aiTitle: '応用AI', aiText: 'RAG、OCR、ローカルおよびクラウドのLLM、自動化、システム連携に取り組んでいます。AI単体ではなく、データ、検証、セキュリティ、可観測性を含むシステム全体の一部として活用することを重視しています。', automationTitle: '業務プロセス自動化', automationText: '繰り返し作業を削減し、手作業に依存していた業務を集約するために、処理ロジック、連携機能、スクレイパー、社内システムを開発しています。', devopsTitle: 'DevOps & インフラ', devopsText: 'Docker、GitHub Actions、CI/CD、Linux、VM、監視を開発フローに取り入れ、再現性が高く運用しやすいプロジェクト構成を目指しています。' },
+                stack: { command: './技術スタック.sh' },
+                projects: { mangaStatus: '開発中', mangaText: 'マンガを読みながら日本語を学ぶためのローカルファーストなワークスペースです。元画像を保持したままOCRと言語解析をローカルで実行し、必要に応じてAIによる文脈補足を利用できます。', mangaArchitecture: 'Reactリーダー、FastAPI、PostgreSQLキュー、非同期ワーカー、ローカルOCR、Sudachi/JMdict、任意のGemini連携、Docker Compose、Full Stackテスト、CI、明確なプライバシーとセキュリティ方針で構成しています。', codeDocs: 'コード & ドキュメント', lmereText: '製菓店向けのホワイトラベルSaaSとCMSです。注文シミュレーター、Kanban形式のワークフロー、店舗ごとのカスタマイズ機能を備えています。', video: '動画', newsText: 'スクレイピング、LLMによる要約と翻訳、CMS、ローカルとクラウドを組み合わせたバッチ処理を備えるバイリンガルニュースポータルです。', code: 'コード', financeText: 'FastAPI API、React Nativeアプリ、領収書OCR、AI、通知、オフライン対応を備えた財務管理システムです。', studyText: '学習コンテンツをLLMで構造化されたフラッシュカードに変換するFull Stackプラットフォームです。', ragText: 'PDFを対象に、ベクトル化、コンテキスト検索、ローカルLLMを利用するオフラインアシスタントです。', feedbackText: '感情分析、優先度判定、カテゴリ分類、ローカルLLMを使ってサポートチケットを振り分けるAPIです。' },
+                cta: { command: '$ ./プロジェクト相談.sh', title: '開発したいものがありますか？', text: '社内システム、自動化、ダッシュボード、システム連携、Webサイトなどが必要な方向けに、事例、操作できるデモ、初期診断をまとめた別ページを用意しています。', meta: '個別開発 · 直接相談 · 技術要件に合わせた提案', button: 'GyliDevを見る' },
+                hobbies: { resetTitle: 'Reset', resetText: 'バグで行き詰まったときは、Minecraftやチェス、ストラテジーゲームで一度頭を切り替えてから、気分をリセットして作業に戻ります。', musicTitle: 'Coding Vibe', musicText: 'Twenty One Pilots、Linkin Park、System of a Down、Bruno Mars、それから日本の音楽をよく聴きながらコードを書いています。' },
+                footer: { title: '一緒に何か作りませんか？', text: 'Full Stack開発、自動化、システム連携、応用AI、業務システムに対応しています。', email: 'メールを送る', hosted: 'Gyli本人が制作し、GitHub Pagesで公開しています。', exit: 'System.exit(0); // またね！' }
             }
+        };
+
+        const languageCodes = { 'pt-BR': 'PT-BR', en: 'EN', es: 'ES', ja: 'JA' };
+        const storageKey = 'gyli-portfolio-language';
+        function getByPath(obj, path) { return path.split('.').reduce((current, key) => current && current[key], obj); }
+        function detectLanguage() {
+            const saved = localStorage.getItem(storageKey);
+            if (saved && translations[saved]) return saved;
+            const browserLanguages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'pt-BR'];
+            for (const value of browserLanguages) {
+                const lang = value.toLowerCase();
+                if (lang.startsWith('pt')) return 'pt-BR';
+                if (lang.startsWith('ja')) return 'ja';
+                if (lang.startsWith('es')) return 'es';
+                if (lang.startsWith('en')) return 'en';
+            }
+            return 'pt-BR';
+        }
+        function applyLanguage(lang, persist = false) {
+            const selected = translations[lang] ? lang : 'pt-BR';
+            const dictionary = translations[selected];
+            document.documentElement.lang = selected;
+            document.title = dictionary.pageTitle;
+            document.querySelector('meta[name="description"]').setAttribute('content', dictionary.metaDescription);
+            document.getElementById('language-code').textContent = languageCodes[selected];
+            document.querySelectorAll('[data-i18n]').forEach((element) => { const value = getByPath(dictionary, element.dataset.i18n); if (typeof value === 'string') element.textContent = value; });
+            document.querySelectorAll('[data-i18n-html]').forEach((element) => { const value = getByPath(dictionary, element.dataset.i18nHtml); if (typeof value === 'string') element.innerHTML = value; });
+            document.querySelectorAll('.lang-option').forEach((option) => { const active = option.dataset.lang === selected; option.classList.toggle('bg-gh-border', active); option.classList.toggle('text-white', active); });
+            if (persist) localStorage.setItem(storageKey, selected);
+        }
+        function setupLanguageSwitcher() {
+            const button = document.getElementById('language-button'); const menu = document.getElementById('language-menu');
+            button.addEventListener('click', (event) => { event.stopPropagation(); const isHidden = menu.classList.toggle('hidden'); button.setAttribute('aria-expanded', String(!isHidden)); });
+            document.querySelectorAll('.lang-option').forEach((option) => { option.addEventListener('click', () => { applyLanguage(option.dataset.lang, true); menu.classList.add('hidden'); button.setAttribute('aria-expanded', 'false'); }); });
+            document.addEventListener('click', (event) => { if (!document.getElementById('language-switcher').contains(event.target)) { menu.classList.add('hidden'); button.setAttribute('aria-expanded', 'false'); } });
+            document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { menu.classList.add('hidden'); button.setAttribute('aria-expanded', 'false'); } });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            applyLanguage(detectLanguage()); setupLanguageSwitcher();
+            const text = 'whoami'; const typeWriterElement = document.getElementById('typewriter'); const outputElement = document.getElementById('terminal-output'); let i = 0;
+            function type() { if (i < text.length) { typeWriterElement.innerHTML += text.charAt(i++); setTimeout(type, 150); } else { typeWriterElement.classList.remove('terminal-cursor'); setTimeout(() => outputElement.classList.remove('hidden'), 300); } }
             setTimeout(type, 800);
         });
     </script>
