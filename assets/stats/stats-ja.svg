@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">GitHub&#12391;&#12398;&#27963;&#21205;, Rank: B+</title>
-        <desc id="descId">&#12473;&#12479;&#12540;&#12373;&#12428;&#12383;&#25968;: 5, &#21512;&#35336;&#12467;&#12511;&#12483;&#12488;&#25968;  : 786, &#21512;&#35336; PR: 302, &#21512;&#35336; issue: 242, &#36002;&#29486;&#12375;&#12383;&#12522;&#12509;&#12472;&#12488;&#12522; （&#26152;&#24180;）: 1</desc>
+        <desc id="descId">&#12473;&#12479;&#12540;&#12373;&#12428;&#12383;&#25968;: 5, &#21512;&#35336;&#12467;&#12511;&#12483;&#12488;&#25968;  : 967, &#21512;&#35336; PR: 312, &#21512;&#35336; issue: 245, &#36002;&#29486;&#12375;&#12383;&#12522;&#12509;&#12472;&#12488;&#12522; （&#26152;&#24180;）: 1</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 120.47309297886753;
+        stroke-dashoffset: 117.48310319899434;
       }
     }
   
@@ -166,7 +166,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >786</text>
+      >967</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -181,7 +181,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >302</text>
+      >312</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -196,7 +196,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >242</text>
+      >245</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
