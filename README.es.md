@@ -1,7 +1,7 @@
-# Gyliardson Keitison | Desarrollador de Software & Automatización de Procesos
+# Gyliardson Keitison | Desarrollador de Software | Full Stack, Automatización e IA Aplicada
 
 <div align="center">
-  <img src="profile-banner.jpg" alt="Gyliardson Keitison | Desarrollador de Software & Automatización de Procesos" width="100%">
+  <img src="profile-banner.jpg" alt="Gyliardson Keitison | Desarrollador de Software | Full Stack, Automatización e IA Aplicada" width="100%">
 </div>
 
 <div align="center">
@@ -12,11 +12,11 @@
 
 ## Sobre mí
 
-Soy **Desarrollador de Software enfocado en automatización de procesos, aplicaciones Full Stack e IA aplicada**. Desarrollo soluciones de extremo a extremo utilizando **Python, JavaScript/TypeScript, React/Next.js, FastAPI, Node.js, PostgreSQL y Docker**.
+Soy **Desarrollador de Software enfocado en aplicaciones Full Stack, automatización de procesos e IA aplicada**. Desarrollo soluciones de extremo a extremo utilizando **Python, JavaScript/TypeScript, React/Next.js, FastAPI, Node.js, PostgreSQL y Docker**.
 
 Mi trabajo suele estar en la intersección entre la ingeniería de software y la eficiencia operativa: sistemas internos, integraciones corporativas, procesamiento de documentos, RPA, APIs, dashboards, flujos asistidos por IA y soluciones privadas/locales con LLMs.
 
-En mi puesto actual trabajo en todo el ciclo de entrega, desde la arquitectura y la implementación hasta el despliegue, monitoreo, mantenimiento e infraestructura. Esto incluye ingestión de documentos a gran escala, clasificación OCR, pipelines RAG, sincronización con SharePoint, automatización financiera, entornos Docker y CI/CD.
+En el trabajo profesional y en proyectos personales participo en todo el ciclo de entrega, desde arquitectura e implementación hasta pruebas, despliegue, monitoreo, mantenimiento e infraestructura. También utilizo LLMs y coding agents dentro de un flujo de ingeniería estructurado para descomponer tareas, implementar y revisar, con criterios de aceptación, pruebas automatizadas y CI como gates de validación.
 
 <div align="center">
   <h3>¿Quieres ver más que el código?</h3>
@@ -30,7 +30,9 @@ En mi puesto actual trabajo en todo el ciclo de entrega, desde la arquitectura y
 
 `Python` · `TypeScript` · `JavaScript` · `React` · `Next.js` · `Node.js` · `FastAPI` · `PostgreSQL` · `Supabase` · `Docker` · `GitHub Actions` · `Linux`
 
-**IA aplicada:** RAG · OCR · integración con LLMs · Gemini · Ollama · LangChain · flujos de IA local
+**IA aplicada:** RAG · OCR · integración con LLMs · Gemini · Ollama · LangChain
+
+**Desarrollo AI-native:** coding agents · descomposición de tareas · criterios de aceptación · implementación/revisión asistidas · validación con pruebas/CI
 
 ## Actividad en GitHub
 
@@ -46,7 +48,7 @@ En mi puesto actual trabajo en todo el ciclo de entrega, desde la arquitectura y
 ### MangaSensei
 **Workspace local-first para estudiar japonés con manga**
 
-Aplicación orientada a la privacidad que conserva las páginas originales del manga mientras ejecuta OCR y análisis lingüístico determinista de forma local. La arquitectura incluye lector React, API FastAPI, cola PostgreSQL, workers, Sudachi/JMdict, enriquecimiento opcional con Gemini, Docker Compose, pruebas full-stack, CI y límites explícitos de seguridad y privacidad.
+Aplicación orientada a la privacidad que conserva las páginas originales del manga mientras ejecuta OCR y análisis lingüístico determinista de forma local. La arquitectura incluye lector React, API FastAPI, cola PostgreSQL, workers, autorización basada en capabilities, Sudachi/JMdict, enriquecimiento opcional con Gemini, Docker Compose, pruebas full-stack, CI y límites explícitos de seguridad y privacidad.
 
 `React` · `FastAPI` · `PostgreSQL` · `Docker` · `OCR` · `Sudachi` · `JMdict` · `Gemini`
 
@@ -54,54 +56,65 @@ Aplicación orientada a la privacidad que conserva las páginas originales del m
 
 ---
 
-### L'Mere Studio
-**SaaS Multi-Tenant para Pastelerías**
+### Threadwire
+**Controlador local de runtime y tooling para desarrollo**
 
-Plataforma white-label con simulador de pedidos en varias etapas para clientes y un CMS administrativo para productos, flujo Kanban de pedidos y personalización visual por comercio.
+MVP activo escrito en TypeScript/Node.js 24 que supervisa el runtime legítimo de ChatGPT Classic mediante CDP, con enrutamiento de conversaciones, ejecución serializada de turnos, recuperación de sesión/cold start, streaming conservador, reconciliación de la respuesta final y API HTTP/SSE localhost. Proyecto independiente y no oficial.
 
-`Next.js` · `TypeScript` · `React` · `TailwindCSS` · `Prisma`
+`TypeScript` · `Node.js 24` · `CDP` · `HTTP/SSE` · `Pruebas`
 
-[**Demo**](https://lmere-studio.vercel.app) · [**Video**](https://youtu.be/XpgxfHBhJoI)
-
----
-
-### Little Mere News
-**Portal de noticias automatizado con IA**
-
-Plataforma bilingüe de noticias con recolección en Python, resumen/traducción mediante LLM, portal público y CMS en Next.js, Supabase/PostgreSQL y una arquitectura híbrida local/cloud para procesamiento por lotes.
-
-`Next.js` · `Python` · `Supabase` · `Llama 3` · `Docker`
-
-[**Demo**](https://little-mere-news.onrender.com/en) · [**Código fuente**](https://github.com/Gyliardson/little-mere-news)
+[**Código fuente**](https://github.com/Gyliardson/threadwire)
 
 ---
 
 ### FinanceFlow
-**Gestión Financiera, Automatización & OCR**
+**Gestión financiera, automatización y corrección**
 
-Sistema de gestión financiera con backend FastAPI, aplicación React Native, Supabase/PostgreSQL, OCR de comprobantes, insights generados por IA, notificaciones, modo offline y despliegue automatizado.
+Aplicación React Native con backend FastAPI enfocada en la corrección ante reintentos y fallos, combinando PostgreSQL RLS, semántica monetaria decimal exacta, idempotencia durable, almacenamiento privado de recibos, límites explícitos para OCR/IA, reconciliación de resultados ambiguos, CI determinista y una capa independiente de verificación de confianza.
 
-`Python` · `FastAPI` · `React Native` · `Supabase` · `Gemini` · `Docker`
+`Python` · `FastAPI` · `React Native` · `PostgreSQL` · `Supabase` · `Gemini` · `Docker`
 
 [**Código fuente**](https://github.com/Gyliardson/FinanceFlow)
 
 ---
 
 ### StudyFlash AI
-**Plataforma de estudio activo con IA**
+**Plataforma de estudio asistida por IA con garantías deterministas**
 
-Aplicación Full Stack que transforma contenido de estudio en flashcards estructuradas mediante modelos de lenguaje, autenticación, persistencia relacional y servicios frontend/backend separados.
+Plataforma Full Stack con Next.js, FastAPI, PostgreSQL/Prisma, autenticación Clerk, límite server-only para el proveedor de IA, sesiones de estudio reanudables, exámenes con estado autoritativo en el servidor, mutaciones seguras ante reintentos, proveedor de IA determinista para pruebas, Playwright y validación clean-room en CI.
 
-`Next.js` · `FastAPI` · `Clerk` · `Supabase`
+`Next.js` · `FastAPI` · `PostgreSQL` · `Prisma` · `Clerk` · `Groq` · `Playwright`
 
-[**Demo**](https://studyflash-ai.vercel.app/)
+[**Demo**](https://studyflash-ai.vercel.app/) · [**Código fuente**](https://github.com/Gyliardson/studyflash-ai)
+
+---
+
+### L'Mere Studio
+**SaaS Multi-Tenant para Pastelerías**
+
+Plataforma white-label de pedidos con catálogo y administración por tenant, precios y disponibilidad autoritativos en el servidor, verificaciones de ownership, sesiones administrativas revocables, transacciones serializables en PostgreSQL, creación idempotente de pedidos y validación determinista de API/browser.
+
+`Next.js` · `TypeScript` · `React` · `PostgreSQL` · `Prisma` · `Playwright`
+
+[**Demo**](https://lmere-studio.vercel.app) · [**Video**](https://youtu.be/XpgxfHBhJoI) · [**Código fuente**](https://github.com/Gyliardson/lmere-studio)
+
+---
+
+### Little Mere News
+**Pipeline determinista de noticias asistido por IA**
+
+Portal bilingüe y CMS en Next.js con ingestión finita de RSS/Atom en Python, validación estructurada de la salida de IA, colas durables, reintentos/cuarentena acotados, idempotencia segura frente a replay, autorización Supabase/PostgreSQL con RLS y CI determinista.
+
+`Next.js` · `Python` · `Supabase` · `PostgreSQL` · `IA compatible con Ollama` · `GitHub Actions`
+
+[**Demo**](https://little-mere-news.onrender.com/en) · [**Código fuente**](https://github.com/Gyliardson/little-mere-news)
 
 ---
 
 ### Smart Feedback API
-**Clasificación de tickets con IA**
+**Clasificación de tickets con IA — Prototipo**
 
-Microservicio REST para clasificación automática de tickets de soporte, con análisis de sentimiento, categorización, priorización, salida JSON estructurada y ejecución local de LLM.
+Prototipo REST para clasificación automática de tickets de soporte, con análisis de sentimiento, categorización, priorización, salida JSON estructurada y ejecución local de LLM.
 
 `Python` · `FastAPI` · `Docker` · `Ollama` · `Pydantic`
 
@@ -110,9 +123,9 @@ Microservicio REST para clasificación automática de tickets de soporte, con an
 ---
 
 ### Local RAG Assistant
-**Asistente offline para documentos**
+**Asistente offline para documentos — Prototipo**
 
-Aplicación local para analizar PDFs de forma privada con chunking, embeddings, recuperación vectorial, respuestas con referencias a las fuentes e inferencia mediante LLM local.
+Prototipo local para analizar PDFs de forma privada con chunking, embeddings, recuperación vectorial, respuestas con referencias a las fuentes e inferencia mediante LLM local.
 
 `Python` · `LangChain` · `Streamlit` · `ChromaDB` · `Ollama`
 
@@ -123,8 +136,10 @@ Aplicación local para analizar PDFs de forma privada con chunking, embeddings, 
 - Automatización de procesos y RPA
 - Sistemas internos y dashboards B2B
 - APIs REST e integraciones corporativas
+- Backends confiables y arquitecturas orientadas a la corrección
 - Ingestión de documentos, OCR, búsqueda semántica y RAG
 - Soluciones de IA local-first y privadas
+- Tooling y flujos de ingeniería asistidos por IA
 - Servicios con Docker, CI/CD e infraestructura pragmática
 
 ## Contacto
