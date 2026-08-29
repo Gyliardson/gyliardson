@@ -85,7 +85,7 @@ Full Stack study platform with Next.js, FastAPI, PostgreSQL/Prisma, Clerk authen
 
 `Next.js` · `FastAPI` · `PostgreSQL` · `Prisma` · `Clerk` · `Groq` · `Playwright`
 
-[**Live Demo**](https://studyflash-ai.vercel.app/) · [**Source Code**](https://github.com/Gyliardson/studyflash-ai)
+[**Live Demo**](https://studyflash.gyli.dev/) · [**Source Code**](https://github.com/Gyliardson/studyflash-ai)
 
 ---
 
@@ -96,7 +96,7 @@ White-label ordering platform with tenant-scoped catalog and administration, ser
 
 `Next.js` · `TypeScript` · `React` · `PostgreSQL` · `Prisma` · `Playwright`
 
-[**Live Demo**](https://lmere-studio.vercel.app) · [**Demo Video**](https://youtu.be/XpgxfHBhJoI) · [**Source Code**](https://github.com/Gyliardson/lmere-studio)
+[**Live Demo**](https://lmere.gyli.dev/) · [**Demo Video**](https://youtu.be/XpgxfHBhJoI) · [**Source Code**](https://github.com/Gyliardson/lmere-studio)
 
 ---
 
