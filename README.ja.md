@@ -21,7 +21,7 @@
 <div align="center">
   <h3>コード以外も見てみませんか？</h3>
   <p>プロジェクトやライブデモを通して、私がどのようにソフトウェアを開発しているかご覧いただけます。</p>
-  <a href="https://gyliardson.github.io/gyliardson/">
+  <a href="https://portfolio.gyli.dev/">
     <img src="https://img.shields.io/badge/View_Portfolio-238636?style=for-the-badge&logo=github&logoColor=white" alt="ポートフォリオを見る">
   </a>
 </div>
@@ -146,6 +146,6 @@ PDFをローカル環境でプライベートに分析するプロトタイプ�
 
 <div align="center">
   <a href="https://linkedin.com/in/gyliardson-keitison">LinkedIn</a> ·
-  <a href="https://gyliardson.github.io/gyliardson/">Portfolio</a> ·
+  <a href="https://portfolio.gyli.dev/">Portfolio</a> ·
   <a href="mailto:gyliardson@outlook.com">Email</a>
 </div>
