@@ -85,7 +85,7 @@ Plataforma Full Stack con Next.js, FastAPI, PostgreSQL/Prisma, autenticación Cl
 
 `Next.js` · `FastAPI` · `PostgreSQL` · `Prisma` · `Clerk` · `Groq` · `Playwright`
 
-[**Demo**](https://studyflash-ai.vercel.app/) · [**Código fuente**](https://github.com/Gyliardson/studyflash-ai)
+[**Demo**](https://studyflash.gyli.dev/) · [**Código fuente**](https://github.com/Gyliardson/studyflash-ai)
 
 ---
 
@@ -96,7 +96,7 @@ Plataforma white-label de pedidos con catálogo y administración por tenant, pr
 
 `Next.js` · `TypeScript` · `React` · `PostgreSQL` · `Prisma` · `Playwright`
 
-[**Demo**](https://lmere-studio.vercel.app) · [**Video**](https://youtu.be/XpgxfHBhJoI) · [**Código fuente**](https://github.com/Gyliardson/lmere-studio)
+[**Demo**](https://lmere.gyli.dev/) · [**Video**](https://youtu.be/XpgxfHBhJoI) · [**Código fuente**](https://github.com/Gyliardson/lmere-studio)
 
 ---
 
