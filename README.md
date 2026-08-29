@@ -21,7 +21,7 @@ Across professional work and personal projects, I operate through the complete d
 <div align="center">
   <h3>Want to see more than the code?</h3>
   <p>Explore my projects, live demos and a closer look at how I build software.</p>
-  <a href="https://gyliardson.github.io/gyliardson/">
+  <a href="https://portfolio.gyli.dev/">
     <img src="https://img.shields.io/badge/View_My_Portfolio-238636?style=for-the-badge&logo=github&logoColor=white" alt="View my portfolio">
   </a>
 </div>
@@ -146,6 +146,6 @@ Local prototype for private PDF analysis with chunking, embeddings, vector retri
 
 <div align="center">
   <a href="https://linkedin.com/in/gyliardson-keitison">LinkedIn</a> ·
-  <a href="https://gyliardson.github.io/gyliardson/">Portfolio</a> ·
+  <a href="https://portfolio.gyli.dev/">Portfolio</a> ·
   <a href="mailto:gyliardson@outlook.com">Email</a>
 </div>
