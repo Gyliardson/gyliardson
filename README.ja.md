@@ -85,7 +85,7 @@ Next.js、FastAPI、PostgreSQL/Prisma、Clerk認証で構成したFull Stack学�
 
 `Next.js` · `FastAPI` · `PostgreSQL` · `Prisma` · `Clerk` · `Groq` · `Playwright`
 
-[**デモ**](https://studyflash-ai.vercel.app/) · [**ソースコード**](https://github.com/Gyliardson/studyflash-ai)
+[**デモ**](https://studyflash.gyli.dev/) · [**ソースコード**](https://github.com/Gyliardson/studyflash-ai)
 
 ---
 
@@ -96,7 +96,7 @@ tenant単位のcatalog／管理機能、server-authoritativeな価格・在庫�
 
 `Next.js` · `TypeScript` · `React` · `PostgreSQL` · `Prisma` · `Playwright`
 
-[**デモ**](https://lmere-studio.vercel.app) · [**動画**](https://youtu.be/XpgxfHBhJoI) · [**ソースコード**](https://github.com/Gyliardson/lmere-studio)
+[**デモ**](https://lmere.gyli.dev/) · [**動画**](https://youtu.be/XpgxfHBhJoI) · [**ソースコード**](https://github.com/Gyliardson/lmere-studio)
 
 ---
 
