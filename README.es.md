@@ -21,7 +21,7 @@ En el trabajo profesional y en proyectos personales participo en todo el ciclo d
 <div align="center">
   <h3>¿Quieres ver más que el código?</h3>
   <p>Explora mis proyectos, demos en vivo y conoce más de cerca cómo desarrollo software.</p>
-  <a href="https://gyliardson.github.io/gyliardson/">
+  <a href="https://portfolio.gyli.dev/">
     <img src="https://img.shields.io/badge/Ver_Mi_Portfolio-238636?style=for-the-badge&logo=github&logoColor=white" alt="Ver mi portfolio">
   </a>
 </div>
@@ -146,6 +146,6 @@ Prototipo local para analizar PDFs de forma privada con chunking, embeddings, re
 
 <div align="center">
   <a href="https://linkedin.com/in/gyliardson-keitison">LinkedIn</a> ·
-  <a href="https://gyliardson.github.io/gyliardson/">Portfolio</a> ·
+  <a href="https://portfolio.gyli.dev/">Portfolio</a> ·
   <a href="mailto:gyliardson@outlook.com">Email</a>
 </div>
